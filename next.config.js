@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    // basePath: '/yourlocalpub',
+    basePath: '/yourlocalpub',
 }
 
 module.exports = nextConfig
