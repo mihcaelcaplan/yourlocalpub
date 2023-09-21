@@ -14,7 +14,7 @@ export default function CartItem({item_key, checkout}){
     const [cart, setCart] = useContext(CartContext)
 
     // state
-    console.log(item_key)
+    // console.log(item_key, cart)
 
     return(
         <div className="bg-gray-100 grid grid-cols-4 p-4 gap-2 justify-center text-center">
@@ -40,8 +40,8 @@ export default function CartItem({item_key, checkout}){
                 <p className=" text-sm text-stone-700 pb-2">Quantity</p>
                 {checkout && <div>{cart[item_key].quantity}</div>}
                 {!checkout && <QuantityPicker
-                    cart={cart}
-                    setCart={setCart}
+                    // cart={cart}
+                    // setCart={setCart}
                     item_key={item_key}
                     // quantity={quantity}
                     // setQuantity={setQuantity}  
@@ -56,14 +56,18 @@ export default function CartItem({item_key, checkout}){
     )
 }
 
-function QuantityPicker({cart, setCart, item_key}){
+function QuantityPicker({item_key}){
     
     // set up state
+    const [cart, setCart] = useContext(CartContext)
     const [quantity, setQuantity] = useState(cart[item_key].quantity)
+    console.log("high", cart)
+
 
     // // set cart quantity when quantity is updated within an item
-    useEffect((cart, item_key, setCart)=>{
-        const newCart = {...cart}
+    useEffect(()=>{
+        console.log("low", cart)
+        const newCart = {...cart};
         newCart[item_key].quantity = quantity
         setCart(cart=>({...newCart}))
     }, [quantity])

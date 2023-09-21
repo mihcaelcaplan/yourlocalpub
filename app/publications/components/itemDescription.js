@@ -10,6 +10,7 @@ const getInventory = async (productId)=>{
     
     if (response.ok){
         const data  = await response.json()
+        console.log(data)
         return data;
     }
 }
@@ -22,7 +23,7 @@ export default function ItemDescription({publication, publication_key}){
         itemsLeft: 0
     })
     
-    useEffect((publication, publication_key)=>{
+    useEffect(()=>{
             console.log("updating inv.")
             // go update the inventory    
             
