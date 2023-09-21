@@ -1,0 +1,10 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/checkout/page": "app/checkout/page.js",
+  "/checkout/complete/page": "app/checkout/complete/page.js",
+  "/publications/babe_rainbow/page": "app/publications/babe_rainbow/page.js",
+  "/publications/below_bunyan/page": "app/publications/below_bunyan/page.js",
+  "/publications/orpheus_st_paintings/page": "app/publications/orpheus_st_paintings/page.js"
+}

@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/222-ff7eda408284f647.js",
+      "static/chunks/app/page-44da628acb497fb7.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/css/7aadbaf8d7ae5d03.css",
+      "static/chunks/app/layout-5f8d294aa0e32d81.js"
+    ],
+    "/cart/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/222-ff7eda408284f647.js",
+      "static/chunks/app/cart/page-88c85364d85e27b6.js"
+    ],
+    "/checkout/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/222-ff7eda408284f647.js",
+      "static/chunks/960-1bac429191a14611.js",
+      "static/chunks/app/checkout/page-e6fc3888918c8e25.js"
+    ],
+    "/checkout/complete/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/app/checkout/complete/page-321c81c9435dc0ef.js"
+    ],
+    "/publications/babe_rainbow/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/222-ff7eda408284f647.js",
+      "static/chunks/app/publications/babe_rainbow/page-01500bd68a9631c4.js"
+    ],
+    "/publications/layout": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/app/publications/layout-2858c32476d79ed7.js"
+    ],
+    "/publications/below_bunyan/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/222-ff7eda408284f647.js",
+      "static/chunks/app/publications/below_bunyan/page-f6785e3cb9e0eae3.js"
+    ],
+    "/publications/orpheus_st_paintings/page": [
+      "static/chunks/webpack-fabde90ddde4f5c1.js",
+      "static/chunks/fd9d1056-4f58c4614286e8ed.js",
+      "static/chunks/596-f086652dcb2eca31.js",
+      "static/chunks/main-app-80c8214d0d151bd6.js",
+      "static/chunks/222-ff7eda408284f647.js",
+      "static/chunks/app/publications/orpheus_st_paintings/page-ef000d9595c2229d.js"
+    ]
+  }
+}
