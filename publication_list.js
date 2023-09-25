@@ -2,7 +2,7 @@ export default {
     orpheus_st: {
         id:1,
         status: "active",
-        coverImage: "/orpheus_st_paintings/orpheus_1_cover.png",
+        coverImage: "/orpheus_st_paintings/OrpheusStreet_Cover.jpg",
         route: "/publications/orpheus_st_paintings",
         title: "Orpheus Street Paintings",
         publicationYear: 2023,
