@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { useForm, SubmitHandler } from "react-hook-form"
 import CartItem from "../cart/components/cart_item";
 import { CartContext } from "../components/cart_context";
+import ShippingItem from "./components/shipping_item";
 
 
 export default function Home(){
@@ -22,10 +23,16 @@ export default function Home(){
     var checkoutId = useRef();
     var shippingDetails = useRef();
     var contactDetails = useRef();
+    var shippingPrice = useRef();
+    var checkoutPrice = useRef();
 
     // get the checkoutId
     useEffect(() => {
-       checkoutId.current = localStorage.getItem('checkoutId')
+        const checkout = JSON.parse(localStorage.getItem('checkout'))
+       checkoutId.current = checkout.checkoutId
+       shippingPrice.current = checkout.shippingPrice
+       checkoutPrice.current = checkout.checkoutPrice
+
       }, []);
 
     // handler runs on payment widget load
@@ -47,6 +54,7 @@ export default function Home(){
             address1: data.address1,
             address2: data.address2,
             postcode: data.postCode,
+            price: shippingPrice.current
 
         }
         contactDetails.current = {
@@ -111,6 +119,9 @@ export default function Home(){
             className="bg-slate-200 p-2 rounded-md drop-shadow-md">
             
             <h2 className="text-lg pb-2 font-semibold">Order</h2>
+            <div
+            className="grid grid-cols-1 gap-2"
+            >
             {Object.keys(cart).map(item_key => (
                     <CartItem
                         key={item_key}
@@ -118,6 +129,10 @@ export default function Home(){
                         checkout={true}
                     />
                 ))}
+            <ShippingItem
+                price={shippingPrice.current}
+            />
+            </div>
             
 
             <DetailsForm
@@ -134,7 +149,7 @@ export default function Home(){
             onClick={handleSubmit(handleOrderSubmit)}
             className="bg-stone-100 hover:bg-stone-200 border-2 border-sky-200 rounded-md text-center text-lg text-stone-600 pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
             >
-                Submit
+                Pay £{checkoutPrice.current}
             </div>
             </div>
             

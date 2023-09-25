@@ -41,7 +41,11 @@ export default function CheckoutButton({cart}){
             console.log("Success:", result);
             
             // write to localstorage
-            localStorage.setItem("checkoutId", result.checkoutId);
+            localStorage.setItem("checkout", JSON.stringify({
+                checkoutId: result.checkoutId,
+                shippingPrice: result.shippingPrice,
+                checkoutPrice: result.checkoutPrice
+            }));
             
             // navigate over to the checkout
             location.href = "/checkout";

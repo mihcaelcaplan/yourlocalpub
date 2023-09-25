@@ -2,7 +2,7 @@ export default {
     orpheus_st: {
         id:1,
         status: "active",
-        coverImage: "/orpheus_st_paintings/orpheus_1_cover.png",
+        coverImage: "/orpheus_st_paintings/1OrpheusStreet_Cover.jpg",
         route: "/publications/orpheus_st_paintings",
         title: "Orpheus Street Paintings",
         publicationYear: 2023,
@@ -16,7 +16,7 @@ export default {
     below_bunyan:{
         id:2,
         status:"active",
-        coverImage: "/below_bunyan/belowbunyan_1_cover.png",
+        coverImage: "/below_bunyan/1BelowBunyan_Grey_Cover.jpg",
         route: "/publications/below_bunyan",
         title: "Below Bunyan",
         publicationYear: 2021,
@@ -30,7 +30,7 @@ export default {
     babe_rainbow: {
         id: 3,
         status:"active",
-        coverImage: "/babe_rainbow/baberainbow_1_cover.png",
+        coverImage: "/babe_rainbow/1MHC_Zine_Grey_Cover.jpg",
         route: "/publications/babe_rainbow",
         title: "Mildly High on the Babe Rainbow", 
         publicationYear: 2023,

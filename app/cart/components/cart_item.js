@@ -7,11 +7,11 @@ import { useContext } from "react"
 import { CartContext } from "@/app/components/cart_context"
 
 
-
 export default function CartItem({item_key, checkout}){
     
     // get context
     const [cart, setCart] = useContext(CartContext)
+    const [quantity, setQuantity] = useState(cart[item_key].quantity)
 
     // state
     // console.log(item_key, cart)
@@ -32,41 +32,48 @@ export default function CartItem({item_key, checkout}){
                     }}
                 />
                 </a>
+                
+            
+
             <div className="flex flex-col justify-center border-r-2 pl-2">
                 <p className=" text-sm text-stone-700 pb-2">Title</p>
                 <p>{publications[item_key].title}</p>
             </div>
-            <div className="flex flex-col justify-center border-r-2 pl-2">
+
+            {quantity == 0 && <Remove 
+                setQuantity={setQuantity}
+                cart={cart}
+                setCart={setCart}
+                item_key={item_key}
+            />}
+
+            {quantity > 0 && <div className="flex flex-col justify-center border-r-2 pl-2">
                 <p className=" text-sm text-stone-700 pb-2">Quantity</p>
                 {checkout && <div>{cart[item_key].quantity}</div>}
                 {!checkout && <QuantityPicker
-                    // cart={cart}
-                    // setCart={setCart}
                     item_key={item_key}
-                    // quantity={quantity}
-                    // setQuantity={setQuantity}  
-                    // updateCartQuantity={updateCartQuantity}   
+                    quantity={quantity}
+                    setQuantity={setQuantity}  
                 />}
-            </div>
-            <div className="flex flex-col justify-center pl-2">
+            </div>}
+            
+            {quantity > 0 && <div className="flex flex-col justify-center pl-2">
                 <p className=" text-sm text-stone-700 pb-2">Price</p>
                 <p>£{publications[item_key].price}</p>
-            </div>
+            </div>}
+        
         </div>
     )
 }
 
-function QuantityPicker({item_key}){
+function QuantityPicker({item_key, quantity, setQuantity}){
     
     // set up state
     const [cart, setCart] = useContext(CartContext)
-    const [quantity, setQuantity] = useState(cart[item_key].quantity)
-    console.log("high", cart)
 
 
     // // set cart quantity when quantity is updated within an item
     useEffect(()=>{
-        console.log("low", cart)
         const newCart = {...cart};
         newCart[item_key].quantity = quantity
         setCart(cart=>({...newCart}))
@@ -107,5 +114,32 @@ function QuantityPicker({item_key}){
                 +
             </div>
         </div>
+    )
+}
+
+function Remove({cart, setCart, setQuantity, item_key}){
+    return(
+        <div
+        className="col-span-2 rounded-md bg-white"
+        >   
+            <div className="text-[0.8rem] rounded-full bg-red-500 hover:bg-red-800 w-5 h-5 text-center ml-auto m-2" 
+                onClick={()=>{setQuantity(1)}}
+                >
+                X
+                </div>
+
+
+            <div
+            className="rounded-md text-center bg-gray-100 hover:bg-gray-200 inline-block p-4 pl-8 pr-8"
+            onClick={()=>{
+                const updateCart = cart;
+                delete updateCart[item_key];
+                setCart(cart=>({...updateCart}));
+                // console.log(updateCart);
+            }}
+            >
+                Remove?
+            </div>
+        </div> 
     )
 }
