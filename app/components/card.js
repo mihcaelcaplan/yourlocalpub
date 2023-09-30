@@ -14,6 +14,7 @@ export default function Card({publication_key}) {
                     alt={`$(publication.title) cover image`}
                     width={100}
                     height={100}
+                    quality={30}
                     sizes="100vw"
                     style={{
                         width: '100%',

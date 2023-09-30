@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
                 {children}
           </div>        
           {/* info pane */}
-          <div className=' bg-pubinfo md:w-1/3 md:flex h-auto min-h-screen'>
+          <div className='bg-pubblue md:w-1/3 md:flex h-auto min-h-screen'>
               <SidePane />
           </div>
         </CartContext.Provider>

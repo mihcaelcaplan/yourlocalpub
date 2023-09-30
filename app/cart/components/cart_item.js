@@ -82,7 +82,7 @@ function QuantityPicker({item_key, quantity, setQuantity}){
     return(
         <div className="flex flex-row items-center justify-center ">
             <div 
-            className=" bg-slate-200 hover:bg-slate-400 rounded-md p-1 pb"
+            className=" bg-slate-200 hover:bg-pubblue rounded-md p-1 w-[1.5rem]"
             onClick={()=>{
                 setQuantity(Number(quantity)-1)
             }}
@@ -106,7 +106,7 @@ function QuantityPicker({item_key, quantity, setQuantity}){
                     />
             </div>
             <div 
-            className=" bg-rose-200 hover:bg-rose-600 rounded-md p-1"
+            className=" bg-rose-200 hover:bg-pubred rounded-md p-1 w-[1.5rem]"
             onClick={()=>{
                 setQuantity(Number(quantity)+1)
             }}

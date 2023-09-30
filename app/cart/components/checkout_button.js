@@ -64,7 +64,7 @@ export default function CheckoutButton({cart}){
     return(
         <div>
             <div
-            className="bg-stone-100 hover:bg-stone-200 border-2 border-sky-200 rounded-md text-center text-lg text-stone-600 pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
+            className="bg-stone-100 hover:bg-stone-200 border-2 border-pubblue rounded-md text-center text-lg text-stone-600 pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
             > 
                 <div
                 href="/checkout"

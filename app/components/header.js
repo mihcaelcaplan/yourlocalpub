@@ -25,7 +25,7 @@ export default function Header(){
                     />
                 </a>
             </h1>     
-            <div className="flex items-end md:hidden text-md ml-auto">
+            <div className="flex items-end md:hidden text-sm md:text-md ml-auto">
                 <Nav />
             </div>
       </div>
