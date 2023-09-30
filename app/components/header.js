@@ -13,6 +13,7 @@ export default function Header(){
                 <a href="/">
                     <Image
                         src={"/logo_upper.png"}
+                        alt="Logo: Your local pub or publication"
                         priority={true}
                         height={100}
                         width={100}
