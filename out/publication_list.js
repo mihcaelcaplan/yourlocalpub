@@ -8,7 +8,7 @@ export default {
         publicationYear: 2023,
         detail:"Hardcover",
         stockQuantity: 15,
-        info: "Orpheus Street Paintings is 57 paged hardback book that collates the work of Nelson Diplexcito. The book introduces you to the artists studio setting and then showcases his body of work ranging from large scale oil on canvas to smaller oil on paper pieces. The book also contains an interview conducted by Jungwon Jay Hur about Diplexcitos practice.",
+        info: "Orpheus Street Paintings is a 57 paged hardback book that collates the work of Nelson Diplexcito. The book introduces you to the artists studio setting and then showcases his body of work ranging from large scale oil on canvas to smaller oil on paper pieces. The book also contains an interview conducted by Jungwon Jay Hur about Diplexcitos practice.",
         images_location:"/orpheus_st_paintings",
         variants:[],
         price: 35.00
