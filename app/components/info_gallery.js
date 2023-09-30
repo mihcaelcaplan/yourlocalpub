@@ -38,6 +38,7 @@ export default function InfoGallery({publication, image_paths}){
                 alt={`$(publication.title) cover image`} 
                 width={100}
                 height={100}
+                quality={90}
                 sizes="100vw"
                 style={{
                     width: '100%',
@@ -61,6 +62,7 @@ export default function InfoGallery({publication, image_paths}){
                 alt={`$(publication.title) cover image`}
                 width={100}
                 height={100}
+                quality={25}
                 sizes="100vw"
                 style={{
                     width: '100%',

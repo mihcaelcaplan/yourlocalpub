@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.info_panel{
-  background: #59859E;
-}
-.content_panel{
-  background: #F3ECE4;
-}
-
 body{
   background: #F3ECE4;
 }

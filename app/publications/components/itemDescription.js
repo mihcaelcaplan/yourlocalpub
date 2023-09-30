@@ -42,19 +42,25 @@ export default function ItemDescription({publication, publication_key}){
 
 
     return(
-        <div className="grid grid-cols-1 m-2 sm:m-6">
+        <div className="grid grid-cols-1 m-2 sm:m-6 uppercase font-medium leading-5">
                 <b>{publication.title}</b>
                 
                 <ul>
-                    <li>{"Published: "+ publication.publicationYear}</li>
-                    <li>{publication.detail}</li>
+                    <li
+                    className=""
+                    >{"Published: "+ publication.publicationYear}</li>
+                    <li
+                    className=""
+                    >{publication.detail}</li>
                 </ul>
             
-                <p className="mt-2 mb-4 w-inherit">{publication.info}</p>
+                <p className="mt-2 mb-4 w-inherit ">{publication.info}</p>
                 
                 <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col">
-                            <div>
+                            <div
+                            className=""
+                            >
                                 {`Edition of ${publication.stockQuantity} (${inventory.itemsLeft} copies left!)`}
                             </div>
                             <div>{"£"+publication.price}</div>
@@ -63,7 +69,7 @@ export default function ItemDescription({publication, publication_key}){
                     
                     {inventory.soldOut && 
                     <div
-                    className="h-6 w-auto p-4 bg-rose-100 text-stone-800 border-rose-400 border-2 rounded-full text-center align-middle  text-[.75] leading-[0rem] sm:text-[1.25rem] sm:leading-[0rem]"
+                    className="h-6 w-auto p-4  text-stone-800 border-pubred border-2 rounded-full text-center align-middle  text-[.75] leading-[0rem] sm:text-[1.25rem] sm:leading-[0rem]"
                     > Sold out!</div>}
 
                     {!inventory.soldOut && 
