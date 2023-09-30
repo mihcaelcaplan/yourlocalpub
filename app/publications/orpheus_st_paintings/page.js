@@ -19,7 +19,7 @@ export default function Home(){
     const image_paths = getImages(publication.images_location)
 
     return(
-        <div className="p-2 sm:p-10">
+        <div className="">
             
             <InfoGallery
                 publication={publication}

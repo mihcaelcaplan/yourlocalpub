@@ -29,15 +29,15 @@ export default function InfoGallery({publication, image_paths}){
 
     return(
         <div
-        className="pb-6 sm:pl-10 sm:pr-10 flex flex-col" 
+        className="pb-6 sm:pl-10 sm:pr-10 flex flex-col items-center" 
         >
             <Image 
-                className={fullScreen ? "fixed z-20 md:max-w-[75%] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : "pb-4" }
+                className={fullScreen ? "fixed z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : "pb-4" }
                 priority={true}
                 src={activeImage}
                 alt={`$(publication.title) cover image`} 
                 width={100}
-                height={100}
+                height={75}
                 quality={90}
                 sizes="100vw"
                 style={{
@@ -51,7 +51,7 @@ export default function InfoGallery({publication, image_paths}){
 
           
             <div
-            className="flex grid-flow-col overflow-scroll md:h-40 h-20"
+            className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem]"
             >
             {allImages.map(bookImage=>(
                 <Image 
@@ -65,8 +65,8 @@ export default function InfoGallery({publication, image_paths}){
                 quality={25}
                 sizes="100vw"
                 style={{
-                    width: '100%',
-                    height: 'auto',
+                    width: 'auto',
+                    height: '100%',
                 }}
                 />
             ))}

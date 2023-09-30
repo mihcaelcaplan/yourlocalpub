@@ -29,7 +29,7 @@ export default function ItemDescription({publication, publication_key}){
             
             const response = getInventory(publication_key).then((response)=>{
                 const soldOut = (response.lockedInventory <= publication.stockQuantity ? false : true)
-                const itemsLeft = publication.stockQuantity - response.lockedInventory;
+                const itemsLeft = response.lockedInventory;
                 
                 const updateInventory = {
                     soldOut: soldOut,
@@ -48,7 +48,7 @@ export default function ItemDescription({publication, publication_key}){
                 <ul>
                     <li
                     className=""
-                    >{"Published: "+ publication.publicationYear}</li>
+                    >{"Published in "+ publication.publicationYear}</li>
                     <li
                     className=""
                     >{publication.detail}</li>
@@ -57,19 +57,24 @@ export default function ItemDescription({publication, publication_key}){
                 <p className="mt-2 mb-4 w-inherit ">{publication.info}</p>
                 
                 <div className="flex flex-row justify-between items-center">
-                    <div className="flex flex-col">
-                            <div
-                            className=""
-                            >
-                                {`Edition of ${publication.stockQuantity} (${inventory.itemsLeft} copies left!)`}
-                            </div>
-                            <div>{"£"+publication.price}</div>
+                    <div className="flex flex-col text-sm md:">
+                           {!inventory.soldOut && <div>
+                                {`(${inventory.itemsLeft}/${publication.stockQuantity})`}
+                            </div>}
+                           
+                           {inventory.soldOut && <a
+                           className=" underline hover:text-pubblue"
+                           href={`mailto:support@yourlocalpublication.com?subject=Print more copies of ${publication.title}&body=I want to buy one 😀`}
+                           >
+                                Print more!
+                            </a>}
+                            <div className="font-bold">{"£"+publication.price}</div>
                     </div>
                     
                     
                     {inventory.soldOut && 
                     <div
-                    className="h-6 w-auto p-4  text-stone-800 border-pubred border-2 rounded-full text-center align-middle  text-[.75] leading-[0rem] sm:text-[1.25rem] sm:leading-[0rem]"
+                    className="h-6 w-auto p-4  text-stone-800 border-pubred border-2 rounded-full text-center align-middle md:text-[1.25] leading-[0rem] text-[.75rem] whitespace-nowrap"
                     > Sold out!</div>}
 
                     {!inventory.soldOut && 

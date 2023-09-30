@@ -6,7 +6,7 @@ export default function Card({publication_key}) {
     console.log(publications.publication_key)
     const publication = publications[publication_key]
     return (
-        <div className='bg-white w-full h-auto m-auto rounded-xl drop-shadow-md'>
+        <div className='flex flex-col bg-white rounded-xl drop-shadow-md h-full w-full'>
             <a href={publication.route}>
                 <Image 
                     className="rounded-t-xl"
@@ -21,14 +21,23 @@ export default function Card({publication_key}) {
                         height: 'auto',
                     }}
                 />
-                <div className='text-sm md:text-base p-2 active:bg-gray-200'>
-                        <p>{publication.title}</p>
-                        <ul>
-                            <li>{"Published: "+ publication.publicationYear}</li>
-                            <li>{publication.detail}</li>
-                            <li>{"Edition of: "+publication.stockQuantity}</li>
-                            <li>{"£"+publication.price}</li>
-                        </ul>
+                <div className='flex flex-col text-sm md:text-base p-2 active:bg-gray-200'>
+                            <div
+                            className='font-medium'
+                            >{publication.title}</div>
+                            <div 
+                            className=''
+                            >{"Published in "+ publication.publicationYear}</div>
+                            <div 
+                            className='hidden sm:block'
+                            >{publication.detail}</div>
+                            <div 
+                            className='hidden sm:block'
+                            >{"Edition of "+publication.stockQuantity}</div>
+                            <div className='italic mt-auto'>
+                                <p>{"£"+publication.price}</p>
+                            </div>
+                        
                 </div>
             </a>
         </div>

@@ -18,7 +18,7 @@ export default function Home(){
 
 
     return(
-        <div className="p-2 sm:p-10">
+        <div className="">
             
             <InfoGallery
                 publication={publication}

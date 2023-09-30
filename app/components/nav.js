@@ -4,8 +4,8 @@ const nav_padding = ""
 
 export default function Nav({nav_padding}){
     return(
-        <div className={nav_padding +' flex flex-row justify-between items-start'}>
-            <div className='pr-4 font-semibold whitespace-nowrap'>
+        <div className={nav_padding +' flex flex-row justify-between items-start text-[3vw] sm:text-sm md:text-base mt-auto mb-auto'}>
+            <div className=' pr-[3vw] sm:pr-4 font-semibold whitespace-nowrap'>
                 <a 
                 className="md:hidden visible  hover:text-slate-600 "
                 href="/about_us"> 

@@ -18,7 +18,7 @@ export default function Home(){
     return(
         <div className="flex flex-col p-4">
             <div className="pb-4">            
-                <h1 className="text-3xl">Cart</h1>
+                <h1 className="text-3xl font-medium">Cart</h1>
             </div>
             
             <div className="grid grid-cols-1 gap-4 pb-4">
