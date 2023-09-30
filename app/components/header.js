@@ -7,9 +7,9 @@ import Image from "next/image"
 export default function Header(){
 
     return(
-        <div className="flex flex-row pt-2 md:pt-4 md:pb-2 pl-4 md:pl-8 pr-4 md:pr-8 ">
+        <div className="flex flex-col sm:flex-row pt-2 md:pt-2 md:pb-2 pl-4 md:pl-8 pr-4 md:pr-8 ">
               
-            <h1 className='animate-pulse'>
+            <div className='animate-pulse w-full pb-2'>
                 <a href="/"
                 className=""
                 >
@@ -22,13 +22,13 @@ export default function Header(){
                         width={100}
                         sizes="100vw"
                         style={{
-                            width: '85%',
+                            width: '100%',
                             height: 'auto',
                         }}
 
                     />
                 </a>
-            </h1>     
+            </div>     
             <div className="flex md:hidden">
                 <Nav />
             </div>
