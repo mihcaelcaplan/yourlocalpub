@@ -7,17 +7,17 @@ import { useContext } from "react"
 import { CartContext } from "@/app/components/cart_context"
 
 
+
 export default function CartItem({item_key, checkout}){
     
     // get context
     const [cart, setCart] = useContext(CartContext)
     const [quantity, setQuantity] = useState(cart[item_key].quantity)
 
-    // state
-    // console.log(item_key, cart)
 
     return(
         <div className="bg-gray-100 grid grid-cols-cartItem p-2 md:p-4 gap-2 justify-center text-center items-center">
+            
             <a href={publications[item_key].route}
             className="m-auto"
             >
@@ -37,7 +37,8 @@ export default function CartItem({item_key, checkout}){
                 
             
 
-            <div className="flex flex-col justify-center border-r-2">
+            <div className="flex flex-col justify-center border-r-2"
+            >
                 <p className=" text-sm text-stone-700 pb-2">Title</p>
                 <p className="pl-2 pr-2">{publications[item_key].title}</p>
             </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
+import { useSwipeable } from "react-swipeable"
 
 export default function InfoGallery({publication, image_paths}){
     
@@ -10,7 +11,29 @@ export default function InfoGallery({publication, image_paths}){
     const allImages = image_paths
     const inactiveImages = image_paths.filter(element => element != activeImage)
 
-    // console.log(inactiveImages)
+    // swipe handle function
+    const handleSwipe = (dir)=>{
+        if(dir == "Right"){
+            const nextImgIndex = (allImages.indexOf(activeImage) + 1) % allImages.length
+            setActiveImage(allImages[nextImgIndex])
+        }
+        else if(dir == "Left"){
+            const nextImgIndex = (((allImages.indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
+            setActiveImage(allImages[nextImgIndex])
+        }
+    }
+    
+    // set up swipe handlers
+    const config = {
+        swipeDuration: 500,
+        preventScrollOnSwipe: true,
+        trackMouse: true
+    }
+    const handlers = useSwipeable({
+        // onSwiped: (eventData) => console.log("User Swiped!", eventData),
+        onSwiped: (e) => handleSwipe(e.dir),
+        ...config,
+      });
 
     const handleFullscreenClick = (e)=>{
         if(e.target.id == "bg"){
@@ -26,11 +49,14 @@ export default function InfoGallery({publication, image_paths}){
         }
     }
 
+
+
     return(
         <div
         className="pb-6 sm:pl-10 sm:pr-10 flex flex-col items-center" 
         >
             <Image 
+                {...handlers}
                 className={fullScreen ? "fixed z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : "pb-4" }
                 priority={true}
                 src={activeImage}
