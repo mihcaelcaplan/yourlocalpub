@@ -13,11 +13,11 @@ export default function InfoGallery({publication, image_paths}){
 
     // swipe handle function
     const handleSwipe = (dir)=>{
-        if(dir == "Right"){
+        if(dir == "Left"){
             const nextImgIndex = (allImages.indexOf(activeImage) + 1) % allImages.length
             setActiveImage(allImages[nextImgIndex])
         }
-        else if(dir == "Left"){
+        else if(dir == "Right"){
             const nextImgIndex = (((allImages.indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
             setActiveImage(allImages[nextImgIndex])
         }
