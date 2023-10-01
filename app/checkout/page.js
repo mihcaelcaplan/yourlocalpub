@@ -4,9 +4,8 @@ import { useRef } from "react"
 import { useEffect } from "react";
 import { useContext } from "react";
 import { useForm, SubmitHandler } from "react-hook-form"
-import CartItem from "../cart/components/cart_item";
 import { CartContext } from "../components/cart_context";
-import ShippingItem from "./components/shipping_item";
+import Basket from "./components/basket";
 
 
 export default function Home(){
@@ -26,7 +25,7 @@ export default function Home(){
     var shippingPrice = useRef();
     var checkoutPrice = useRef();
 
-    // get the checkoutId
+    // get info onload
     useEffect(() => {
         const checkout = JSON.parse(localStorage.getItem('checkout'))
        checkoutId.current = checkout.checkoutId
@@ -62,9 +61,13 @@ export default function Home(){
             phone: data.phone
         }
 
+        //TODO: can put contact details in storage here if necessary
+
         console.log("shipping", shippingDetails.current)
         console.log("contact" ,contactDetails.current)
-        card.current.submit()
+        const submit = card.current.submit()
+        console.log(submit)
+
     }
 
     // order handler
@@ -90,6 +93,8 @@ export default function Home(){
                 if (response.ok){
                     const result = await response.json();
                     console.log("Success:", result);
+                    // link over to the checkout complete
+                    location.href = "/checkout/complete"
                 }
                 else{
                     throw error = await response.json()
@@ -119,20 +124,11 @@ export default function Home(){
             className="bg-slate-200 p-2 rounded-md drop-shadow-md">
             
             <h2 className="text-lg pb-2 font-semibold">Order</h2>
-            <div
-            className="grid grid-cols-1 gap-2"
-            >
-            {Object.keys(cart).map(item_key => (
-                    <CartItem
-                        key={item_key}
-                        item_key={item_key}
-                        checkout={true}
-                    />
-                ))}
-            <ShippingItem
-                price={shippingPrice.current}
+            <Basket 
+                cart={cart}
+                shippingPrice={shippingPrice}
+                
             />
-            </div>
             
 
             <DetailsForm
