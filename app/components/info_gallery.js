@@ -53,27 +53,30 @@ export default function InfoGallery({publication, image_paths}){
 
     return(
         <div
-        className="pb-6 sm:pl-10 sm:pr-10 flex flex-col items-center" 
+        className="pb-6 sm:pl-4 sm:pr-4 flex flex-col items-center" 
         >
-            <Image 
-                {...handlers}
-                className={fullScreen ? "fixed z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : "pb-4" }
-                priority={true}
-                src={activeImage}
-                alt={`$(publication.title) cover image`} 
-                width={100}
-                height={75}
-                quality={90}
-                sizes="100vw"
-                style={{
-                    width: '100%',
-                    height: 'auto',
-                }}
-                onClick={()=>{
-                    setFullscreen(true);
-                }}
-            />
+                <div className="flex flex-col h-[70vw] md:h-[50vw] xl:h-[40vw] w-[100%] xl:w-[85%] bg-black relative mb-2 justify-center">
+                <Image 
+                    {...handlers}
+                    className={fullScreen ? "fixed z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : " " }
+                    priority={true}
+                    src={activeImage}
+                    alt={`${publication.title} cover`}
+                    quality={90}
+                    // sizes="100vw"
+                    fill
+                    style={{
+                        objectFit: "cover",
+                        // width: "100%",
+                        // height: "auto"
+                    }}
+                    onClick={()=>{
+                        setFullscreen(true);
+                    }}
+                />
 
+                </div>
+                
           
             <div
             className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem]"
