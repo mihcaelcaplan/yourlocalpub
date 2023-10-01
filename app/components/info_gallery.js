@@ -1,6 +1,5 @@
 'use client'
 
-import { APP_CLIENT_INTERNALS } from "next/dist/shared/lib/constants"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -77,6 +76,12 @@ export default function InfoGallery({publication, image_paths}){
                 className="bg-black fixed top-0 left-0 h-screen w-screen z-10"
                 onClick={(e)=>handleFullscreenClick(e)}
             >
+                <div className="mr-2 mt-2 right-10 text-[0.7rem] leading-[1rem] rounded-full bg-gray-200 opacity-70 hover:bg-red-800 w-4 h-4 text-center ml-auto" 
+                    onClick={()=>{setFullscreen(false)}}
+                >
+                X
+                </div>
+                
                 <div
                 id="back"
                 className="fixed z-30 left-0  opacity-60 h-full text-white text-[5rem] p-4"

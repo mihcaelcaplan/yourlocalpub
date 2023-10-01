@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns:{
+        cartItem: "1fr 2fr 1fr 1fr"
+      },
       colors:{
         pubinfo: '#3d85c6',
         pubmain: '#F3ECE4',
