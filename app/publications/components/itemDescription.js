@@ -42,7 +42,7 @@ export default function ItemDescription({publication, publication_key}){
 
 
     return(
-        <div className="grid grid-cols-1 m-2 sm:m-6 uppercase font-medium leading-5">
+        <div className="grid grid-cols-1 mr-2 ml-2 sm:ml-4 sm:mr-4 font-[475] leading-5">
                 <b>{publication.title}</b>
                 
                 <ul>

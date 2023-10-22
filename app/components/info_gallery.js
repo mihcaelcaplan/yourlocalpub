@@ -53,9 +53,9 @@ export default function InfoGallery({publication, image_paths}){
 
     return(
         <div
-        className="pb-6 sm:pl-4 sm:pr-4 flex flex-col items-center" 
+        className="pb-6 sm:pl-4 sm:pr-4 xl:pr-24 xl:pl-24 flex flex-col items-center " 
         >
-                <div className="flex flex-col h-[70vw] md:h-[50vw] xl:h-[40vw] w-[100%] xl:w-[85%] bg-black relative mb-2 justify-center">
+                <div className="flex flex-col h-[70vw] md:h-[40vw] xl:h-[32vw] w-[100%] bg-black relative mb-2 justify-center">
                 <Image 
                     {...handlers}
                     className={fullScreen ? "fixed z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : " " }
@@ -79,7 +79,7 @@ export default function InfoGallery({publication, image_paths}){
                 
           
             <div
-            className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem]"
+            className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start"
             >
             {allImages.map(bookImage=>(
                 <Image 

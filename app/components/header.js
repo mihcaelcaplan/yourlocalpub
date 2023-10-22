@@ -7,14 +7,14 @@ import Image from "next/image"
 export default function Header(){
 
     return(
-        <div className="flex flex-col sm:flex-row pt-2 md:pt-2 md:pb-2 pl-4 md:pl-8 pr-4 md:pr-8 ">
+        <div className="flex flex-col sm:flex-row pt-2 md:pt-2 md:pb-2 pl- md:pl-4 pr-4 md:pr-8 ">
               
             <div className='animate-pulse w-full pb-2'>
                 <a href="/"
                 className=""
                 >
                     <Image
-                        src={"/logo_lower.png"}
+                        src={"/logo_upper.png"}
                         className=""
                         alt="Logo: Your local pub or publication"
                         priority={true}
@@ -22,7 +22,7 @@ export default function Header(){
                         width={100}
                         sizes="100vw"
                         style={{
-                            width: '100%',
+                            width: '90%',
                             height: 'auto',
                         }}
 

@@ -38,12 +38,12 @@ export default function AddToCart({publication_key}){
             />
             <div
                 href="/cart"
-                className="h-6 w-auto p-4 bg-[#93c47d] text-stone-800 hover:bg-amber-50 border-[#f1c232] border-2 rounded-full text-center align-middle leading-[0rem] text-[0.75rem]  sm:text-[1rem]  md:text-[1.25rem] whitespace-nowrap "
+                className="h-6 w-auto p-4 bg-indigo-700 font-semibold text-white hover:bg-indigo-400 border-black border-2 text-center align-middle leading-[0rem] text-[0.75rem]  sm:text-[1rem]  md:text-[1.25rem] whitespace-nowrap "
                 onClick={()=>{
                     AddToCart()
                     setpopupHidden("visible")
                     }}>
-                Add To Cart
+                Buy
             </div>
         </div>
     )

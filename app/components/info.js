@@ -1,6 +1,6 @@
 export default function Info(){
     return(
-        <div className='p-4 '>
+        <div className='p-4 font-[475] '>
         Your Local Pub is a independent publisher created by Brad Gilbert and Michael Caplan. The project started with the aim is to create high quality limited run publications for smaller artists and designers. We aim to release a new artists work monthly.            
         <br />
         <br />
