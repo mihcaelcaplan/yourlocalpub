@@ -1,11 +1,19 @@
 import Info from "../components/info";
+import { Brick, Spacer } from "@/app/components/brick"
+import { BrickWall } from "../components/about_wall";
+
 
 export default function Home(){
     
     return (
         <div
-        className="p-6 pt-8 min-h-screen from-pubmain to-pubinfo text-white font-medium bg-gradient-to-b to-20%">
+        className="flex flex-col">
             <Info />
+
+            <BrickWall 
+            height={"5vh"}
+            />
+            
         </div>
     )
 }

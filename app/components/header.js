@@ -14,7 +14,7 @@ export default function Header(){
                 className=""
                 >
                     <Image
-                        src={"/logo_upper.png"}
+                        src={"/YourLocalPubLogo_Trimmed.png"}
                         className=""
                         alt="Logo: Your local pub or publication"
                         priority={true}
