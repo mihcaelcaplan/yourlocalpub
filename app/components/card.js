@@ -6,10 +6,10 @@ export default function Card({publication_key}) {
     console.log(publications.publication_key)
     const publication = publications[publication_key]
     return (
-        <div className='flex flex-col bg-white rounded-xl drop-shadow-md h-full w-full'>
+        <div className='flex flex-col bg-white border-2 border-black drop-shadow-sm h-full w-full'>
             <a href={publication.route}>
                 <Image 
-                    className="rounded-t-xl"
+                    // className="rounded-t-xl"
                     src={publication.coverImage}
                     alt={`$(publication.title) cover image`}
                     width={100}
