@@ -64,13 +64,13 @@ export default function CheckoutButton({cart}){
     return(
         <div>
             <div
-            className="bg-stone-100 hover:bg-stone-200 border-2 border-pubblue rounded-md text-center text-lg text-stone-600 pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
+            className="bg-indigo-700 hover:bg-indigo-400 border-black border-2 text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
             > 
                 <div
                 href="/checkout"
                 onClick={()=>handleCheckout()}
                 >
-                    Checkout 🛒
+                    Checkout
                 </div>
                 
             </div>

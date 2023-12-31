@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useSwipeable } from "react-swipeable"
 
 export default function InfoGallery({publication, image_paths}){
@@ -22,6 +22,39 @@ export default function InfoGallery({publication, image_paths}){
             setActiveImage(allImages[nextImgIndex])
         }
     }
+
+    // handle key press
+    const handleKeyPress = (e)=>{
+        let nextImgIndex;
+        
+        switch (e.key) {
+            case "Escape":
+                    setFullscreen(false);
+                break;
+            
+                case "ArrowRight":
+                    nextImgIndex = (allImages.indexOf(activeImage) + 1) % allImages.length
+                    setActiveImage(allImages[nextImgIndex])
+                break;
+                
+                case "ArrowLeft":
+                    nextImgIndex = (((allImages.indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
+                    setActiveImage(allImages[nextImgIndex])
+                break;
+        
+            default:
+                break;
+        }
+    }
+
+    useEffect(()=>{
+        document.addEventListener("keydown", handleKeyPress);
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyPress);
+        }
+      
+    }, [activeImage]);
     
     // set up swipe handlers
     const config = {
@@ -50,15 +83,16 @@ export default function InfoGallery({publication, image_paths}){
     }
 
 
-
     return(
         <div
         className="pb-6 sm:pl-4 sm:pr-4 xl:pr-24 xl:pl-24 flex flex-col items-center " 
         >
-                <div className="flex flex-col h-[70vw] md:h-[40vw] xl:h-[32vw] w-[100%] bg-black relative mb-2 justify-center">
+                <div className={fullScreen ? "absolute z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[100%] md:w-[90vw] h-[80vw] md:h-[100%] bg-black mb-2 justify-center" : 
+                                             "flex flex-col h-[70vw] md:h-[40vw] xl:h-[32vw] w-[100%] bg-black relative mb-2 justify-center"}
+                >
                 <Image 
                     {...handlers}
-                    className={fullScreen ? "fixed z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" : " " }
+                    className={fullScreen ? "z-20" : "" }
                     priority={true}
                     src={activeImage}
                     alt={`${publication.title} cover`}
@@ -124,7 +158,7 @@ export default function InfoGallery({publication, image_paths}){
                 
                 <div
                 id="forward"
-                className="fixed z-30 right-0 opacity-60 h-full text-white text-[5rem] p-4 shadow-2xl shadow-rose-700"
+                className="fixed z-30 right-0 opacity-60 h-full text-white text-[5rem] p-4 "
                 onClick={(e)=>handleFullscreenClick(e)}
                 >
                     <div

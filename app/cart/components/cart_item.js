@@ -16,7 +16,7 @@ export default function CartItem({item_key, checkout}){
 
 
     return(
-        <div className="bg-gray-100 grid grid-cols-cartItem p-2 md:p-4 gap-2 justify-center text-center items-center">
+        <div className="bg-white border-2 border-black drop-shadow-sm grid grid-cols-cartItem p-1 md:p-2 gap-2 justify-center text-center items-center">
             
             <a href={publications[item_key].route}
             className="m-auto"
@@ -86,7 +86,7 @@ function QuantityPicker({item_key, quantity, setQuantity}){
     return(
         <div className="flex flex-row items-center justify-center p-2 ">
             <div 
-            className=" bg-slate-200 hover:bg-pubblue rounded-md p-1 w-[1.5rem]"
+            className=" bg-slate-200 hover:bg-pubblue p-1 w-[1.5rem]"
             onClick={()=>{
                 setQuantity(Number(quantity)-1)
             }}
@@ -110,7 +110,7 @@ function QuantityPicker({item_key, quantity, setQuantity}){
                     />
             </div>
             <div 
-            className=" bg-rose-200 hover:bg-pubred rounded-md p-1 w-[1.5rem]"
+            className=" bg-rose-200 hover:bg-pubred p-1 w-[1.5rem]"
             onClick={()=>{
                 setQuantity(Number(quantity)+1)
             }}
@@ -124,11 +124,11 @@ function QuantityPicker({item_key, quantity, setQuantity}){
 function Remove({cart, setCart, setQuantity, item_key}){
     return(
         <div
-        className="flex flex-col col-span-2 rounded-md bg-white w-full h-full"
+        className="flex flex-col col-span-2 border-2 border-black bg-white w-full h-full"
         >   
 
-            <div className="flex flex-row bg-gray-200 rounded-t-md">
-            <div className="text-[0.7rem] rounded-full bg-red-500 hover:bg-red-800 w-4 h-4 text-center ml-auto m-2" 
+            <div className="flex flex-row bg-gray-200 border-b-2 border-black">
+            <div className="text-[0.7rem] bg-red-500 hover:bg-red-800 w-4 h-4 text-center ml-auto m-2" 
                 onClick={()=>{setQuantity(1)}}
                 >
                 X
@@ -136,7 +136,7 @@ function Remove({cart, setCart, setQuantity, item_key}){
             </div>
 
             <div
-            className="flex flex-col rounded-md text-white justify-center text-center bg-pubblue hover:bg-pubred h-1/2 mt-auto mb-auto ml-2 mr-2"
+            className="flex flex-col text-white justify-center text-center bg-pubblue hover:bg-pubred h-1/2 mt-auto mb-auto ml-2 mr-2"
             onClick={()=>{
                 const updateCart = cart;
                 delete updateCart[item_key];

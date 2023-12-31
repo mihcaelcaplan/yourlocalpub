@@ -8,7 +8,7 @@ export default function Info(){
         <br />
         <br />
         
-        Currently Featured:
+        {/* Currently Featured:
         <ul>
         <li>Nelson Diplexcito</li>
         <li>Brad Gilbert</li>
@@ -22,7 +22,7 @@ export default function Info(){
         <li>Ula Taylor Reilly</li>
         <li>Kay Liang</li>
         <li>Curtis Rayment</li>
-        </ul>
+        </ul> */}
         
         <br />
         If you would like to propose a project concept please get in touch via our instagram account.

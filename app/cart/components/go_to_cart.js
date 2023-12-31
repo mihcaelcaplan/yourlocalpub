@@ -75,9 +75,9 @@ const BrickWall = ()=>{
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick4 ${brickHeight}`}>
                 <Brick borderTB={true} borderRL={true}/>
-                <Brick borderTB={true} borderRL={true}/>
+                <a href="/" className="flex bg-green-600 text-white justify-center border border-black"><span  className="text-[1.2vh] md:text-[1.5vw] self-center font-semibold">Keep Shopping</span></a>
                 <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
+                <a href="/cart" className="flex bg-yellow-400 text-white justify-center border border-black"><span  className="text-[1.2vh] md:text-[1.5vw] self-center font-semibold">Go to Cart</span></a>
                 <Brick  borderTB={true} borderRL={true}/>
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick5 ${brickHeight}`}>
@@ -94,12 +94,6 @@ const BrickWall = ()=>{
                 <Brick  borderTB={true} borderRL={true}/>
                 <Brick  borderTB={true} borderRL={true}/>
             </div>
-            {/* <div className={`grid grid-rows-1 grid-cols-brick5 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-            </div> */}
 
         </div>
     )

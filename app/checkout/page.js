@@ -118,17 +118,20 @@ export default function Home(){
             onLoad={()=>handlePaymentWidgetLoad()}
             />
             
-            <h1 className=" text-xl pb-6">Checkout</h1>
+            <h1 className=" text-2xl font-semibold pb-6">Checkout</h1>
 
             <div
-            className="bg-slate-200 p-2 rounded-md drop-shadow-md">
+            className="bg-pubmain p-2 drop-shadow-sm">
             
             <h2 className="text-lg pb-2 font-semibold">Order</h2>
-            <Basket 
-                cart={cart}
-                shippingPrice={shippingPrice}
-                
-            />
+            
+            <div className="pl-2">
+                <Basket 
+                    cart={cart}
+                    shippingPrice={shippingPrice}
+                    
+                />
+            </div>
             
 
             <DetailsForm
@@ -139,11 +142,11 @@ export default function Home(){
             <h2 className="text-lg pb-2 pt-4 font-semibold">Payment</h2>
             <div 
             id="sumup-card"
-            className="pt-2 pb-4" />
+            className="pt-2 mb-4 bg-white border-2 border-black ml-2" />
 
             <div
             onClick={handleSubmit(handleOrderSubmit)}
-            className="bg-stone-100 hover:bg-stone-200 border-2 border-sky-200 rounded-md text-center text-lg text-stone-600 pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
+            className="bg-indigo-600 hover:bg-stone-200 border-2 border-black text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-sm "
             >
                 Pay £{checkoutPrice.current}
             </div>
@@ -169,7 +172,7 @@ const DetailsForm = ({form}) => {
             <h2 className="text-lg pb-2 pt-4 font-semibold">Contact Info</h2>
             
             <div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-2"
+            className="grid grid-cols-1 md:grid-cols-3 gap-2 pl-2"
             > 
                 <label>Email Address*</label>
                 <input {...register("email", {required:"Email required"})}
@@ -183,7 +186,7 @@ const DetailsForm = ({form}) => {
             
             <h2 className="text-lg pb-2 pt-4 font-semibold">Shipping Address</h2>
             <div
-            className="grid grid-cols-1 md:grid-cols-3 gap-2"
+            className="grid grid-cols-1 md:grid-cols-3 gap-2 pl-2"
             >
                 <label>Name*</label>
                 <input {...register("fullName", {required:true})}
@@ -193,7 +196,7 @@ const DetailsForm = ({form}) => {
                 <input {...register("address1", {required:true})}
                 className={"md:col-span-2 rounded-md pl-2" + (errors.address1 ? " border-red-500 border-2" : "")}
                 />
-                <label>Address Line 2*</label>
+                <label>Address Line 2</label>
                 <input {...register("address2")}
                 className={"md:col-span-2 rounded-md pl-2" + (errors.address2 ? " border-red-500 border-2" : "")}
                 />

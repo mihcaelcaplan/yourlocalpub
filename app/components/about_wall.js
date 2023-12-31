@@ -5,7 +5,7 @@ export const BrickWall = ({height})=>{
 
     return (
         <div
-        className="mt-auto justify-end"
+        className="mt-auto"
         >
             <div className={`grid grid-rows-1 grid-cols-brick1 ${brickHeight}`}>
                 <Brick borderTB={true} borderRL={true}/>
@@ -34,14 +34,14 @@ export const BrickWall = ({height})=>{
             
             <div className={`grid grid-rows-1 grid-cols-brick4 ${brickHeight}`}>
                 <Brick borderTB={true} borderRL={true}/>
-                <div className="flex bg-green-600 text-white justify-center border border-black"><span className="self-center font-semibold">ARTISTS</span></div>
+                <div className="flex bg-green-600 text-white justify-center border border-black"><span className="text-[1.2vw] self-center font-semibold">ARTISTS</span></div>
                 <Brick  borderTB={true} borderRL={true}/>
                 <Brick  borderTB={true} borderRL={true}/>
                 <Brick  borderTB={true} borderRL={true}/>
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick5 ${brickHeight}`}>
                 <Brick borderTB={true} borderRL={true}/>
-                <div className="flex bg-yellow-400 text-white justify-center border border-black"><span className="self-center font-semibold">CONTACT</span></div>
+                <div className="flex bg-yellow-400 text-white justify-center border border-black"><span className="text-[1.2vw] self-center font-semibold">CONTACT</span></div>
                 <Brick  borderTB={true} borderRL={true}/>
                 <Brick  borderTB={true} borderRL={true}/>
             </div>
@@ -49,7 +49,7 @@ export const BrickWall = ({height})=>{
                 <Brick borderTB={true} borderRL={true}/>
                 <Brick  borderTB={true} borderRL={true}/>
                 <Brick  borderTB={true} borderRL={true}/>
-                <div className="flex bg-indigo-700 text-white justify-center border border-black"><span className="self-center font-semibold">NEWS</span></div>
+                <div className="flex bg-indigo-700 text-white justify-center border border-black"><span className="text-[1.2vw] self-center font-semibold">NEWS</span></div>
                 <Brick  borderTB={true} borderRL={true}/>
             </div>
 

@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function ShippingItem({price}){
 
     return(
-        <div className="bg-gray-100 grid grid-cols-4 p-4 gap-2 justify-center text-center">
+        <div className="bg-white border-2 border-black grid grid-cols-4 p-4 gap-2 justify-center text-center">
             <div
             className="text-[3rem]"
             >📦</div>
