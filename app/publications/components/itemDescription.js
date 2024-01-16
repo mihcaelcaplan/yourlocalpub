@@ -2,25 +2,14 @@
 
 import AddToCart from "@/app/cart/components/add_to_cart"
 import { useState, useEffect } from "react";
-
-const getInventory = async (productId)=>{
-    const response = await fetch("https://p3p22yr8sg.execute-api.eu-west-2.amazonaws.com/default/checkInventory?"+ new URLSearchParams({
-        productId: productId,
-    }));
-    
-    if (response.ok){
-        const data  = await response.json()
-        console.log(data)
-        return data;
-    }
-}
+import { getInventory } from "./getInventory";
 
 export default function ItemDescription({publication, publication_key}){
     
     // get inventor on load
     const [inventory, setInventory] = useState({
         soldOut: false,
-        itemsLeft: 0
+        lockedInventory: 0
     })
     
     useEffect(()=>{
@@ -28,12 +17,12 @@ export default function ItemDescription({publication, publication_key}){
             // go update the inventory    
             
             const response = getInventory(publication_key).then((response)=>{
-                const soldOut = (response.lockedInventory <= publication.stockQuantity ? false : true)
-                const itemsLeft = response.lockedInventory;
+                const soldOut = (response.lockedInventory < publication.stockQuantity ? false : true)
+                const lockedInventory = response.lockedInventory;
                 
                 const updateInventory = {
                     soldOut: soldOut,
-                    itemsLeft: itemsLeft,
+                    lockedInventory: lockedInventory
                 };
                 
                 setInventory(updateInventory);
@@ -59,7 +48,7 @@ export default function ItemDescription({publication, publication_key}){
                 <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col text-sm md:">
                            {!inventory.soldOut && <div>
-                                {`(${inventory.itemsLeft}/${publication.stockQuantity})`}
+                                {`(${inventory.lockedInventory}/${publication.stockQuantity})`}
                             </div>}
                            
                            {inventory.soldOut && <a

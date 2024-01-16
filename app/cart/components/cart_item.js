@@ -5,6 +5,7 @@ import publications from "@/public/publication_list"
 import { useEffect, useState } from "react"
 import { useContext } from "react"
 import { CartContext } from "@/app/components/cart_context"
+import {getInventory} from "@/app/publications/components/getInventory"
 
 
 
@@ -13,6 +14,34 @@ export default function CartItem({item_key, checkout}){
     // get context
     const [cart, setCart] = useContext(CartContext)
     const [quantity, setQuantity] = useState(cart[item_key].quantity)
+
+    const publication = publications[item_key];
+
+    // each item should know it's own inventory when it loads
+     // get inventory on load
+     const [inventory, setInventory] = useState({
+        soldOut: false,
+        availableQuantity: 0
+    })
+    
+    useEffect(()=>{
+            console.log("updating inv.")
+            // go update the inventory    
+            
+            const response = getInventory(item_key).then((response)=>{
+                const soldOut = response.lockedInventory < publication.stockQuantity ? false : true;
+                const availableQuantity = response.lockedInventory;
+                
+                const updateInventory = {
+                    soldOut: soldOut,
+                    availableQuantity: publication.stockQuantity - response.lockedInventory,
+                };
+
+                console.log("inventory", updateInventory);
+                
+                setInventory(updateInventory);
+            });    
+    }, [])
 
 
     return(
@@ -43,14 +72,14 @@ export default function CartItem({item_key, checkout}){
                 <p className="pl-2 pr-2">{publications[item_key].title}</p>
             </div>
 
-            {quantity == 0 && <Remove 
+            {(quantity == 0 || inventory.soldOut == true) && <Remove 
                 setQuantity={setQuantity}
                 cart={cart}
                 setCart={setCart}
                 item_key={item_key}
             />}
 
-            {quantity > 0 && <div className="flex flex-col justify-center border-r-2">
+            {(quantity > 0 && inventory.soldOut == false) && <div className="flex flex-col justify-center border-r-2">
                 <p className=" text-sm text-stone-700">Quantity</p>
                 {checkout && <div>{cart[item_key].quantity}</div>}
                 {!checkout && <QuantityPicker
@@ -61,7 +90,7 @@ export default function CartItem({item_key, checkout}){
                 
             </div>}
             
-            {quantity > 0 && <div className="flex flex-col justify-center">
+            {(quantity > 0 && inventory.soldOut == false) && <div className="flex flex-col justify-center">
                 <p className=" text-sm text-stone-700 pb-2">Price</p>
                 <p>£{publications[item_key].price}</p>
             </div>}

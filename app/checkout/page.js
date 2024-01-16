@@ -61,8 +61,6 @@ export default function Home(){
             phone: data.phone
         }
 
-        //TODO: can put contact details in storage here if necessary
-
         console.log("shipping", shippingDetails.current)
         console.log("contact" ,contactDetails.current)
         const submit = card.current.submit()
@@ -97,7 +95,7 @@ export default function Home(){
                     location.href = "/checkout/complete"
                 }
                 else{
-                    throw error = await response.json()
+                    throw error = await response.json();
                 }
             } catch (error) {
                 alert("Error:", error);
