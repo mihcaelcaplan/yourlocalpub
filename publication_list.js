@@ -36,7 +36,7 @@ export default {
         publicationYear: 2023,
         detail:"Hardcover",
         stockQuantity: 15,
-        info: "Below Bunyan is a book that represents the diverse artistic spirit of the next generation, captured through compelling details that reveal the interior world of an oft-overlooked phenomenon.",
+        info: "Mildly High on The Babe Rainbow combines London concert photography with selected lyrics to transport the reader into the audience at the venue. Each copy features a hand typewritten cover making every edition unique. The publication also comes with a black & white darkroom handprint from The Mild High Club at Moth Club.",
         images_location:"/babe_rainbow",
         variants: [],
         price: 50.00
