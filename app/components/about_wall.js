@@ -7,7 +7,7 @@ export const BrickWall = ({height, parent})=>{
             brickHeight =  "h-[2.5vw]"
             break;
         case "about_us":
-            brickHeight =  "h-[6vw]"
+            brickHeight =  "h-[9vw]"
             break;
         default:
             brickHeight =  "h-[3vw]"
