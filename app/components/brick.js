@@ -5,7 +5,7 @@ export const Brick = ({position, borderTB, borderRL, span})=>{
     // const colStartFormat = `col-start-${position}`
 
     return(
-        <div className={`bg-orange-800 ${borderTBFormat} ${borderRLFormat} ${spanFormat}`} />
+        <div className={`bg-pubbrick ${borderTBFormat} ${borderRLFormat} ${spanFormat}`} />
     )
 }
 

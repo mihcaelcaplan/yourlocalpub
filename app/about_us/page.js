@@ -7,10 +7,10 @@ export default function Home(){
     
     return (
         <div
-        className="flex-auto">
+        className="flex flex-col">
             <Info />
             <div
-            className="fixed bottom-0 w-full">
+            className="pt-10">
                 <BrickWall 
                 height={"4vw"}
                 parent={"about_us"}
