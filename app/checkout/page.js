@@ -3,9 +3,10 @@ import Script from "next/script";
 import { useRef } from "react"
 import { useEffect } from "react";
 import { useContext } from "react";
-import { useForm, SubmitHandler } from "react-hook-form"
 import { CartContext } from "../components/cart_context";
 import Basket from "./components/basket";
+import DetailsForm from "./components/details_form";
+import { useForm, SubmitHandler } from "react-hook-form"
 
 
 export default function Home(){
@@ -13,7 +14,7 @@ export default function Home(){
     const [cart, setCart] = useContext(CartContext)
 
     // create form {register, handleSubmit}
-    const {register, handleSubmit, watch, formState: {errors}} = useForm({mode: "onTouched"});
+    const {register, handleSubmit, watch, formState: {errors}, control} = useForm({mode: "onTouched"});
     watch(errors);
     
 
@@ -33,6 +34,12 @@ export default function Home(){
        checkoutPrice.current = checkout.checkoutPrice
 
       }, []);
+
+      useEffect(() => {
+        if (Object.keys(cart).length > 0){
+            localStorage.setItem("checkoutCart", JSON.stringify(cart))
+        }
+      }, [cart]);
 
     // handler runs on payment widget load
     const handlePaymentWidgetLoad = ()=> {
@@ -64,12 +71,11 @@ export default function Home(){
         console.log("shipping", shippingDetails.current)
         console.log("contact" ,contactDetails.current)
         const submit = card.current.submit()
-        console.log(submit)
-
     }
 
     // order handler
     const handleOrder = async(status, response) => {
+        console.log(status,response)
         if(status=="success"){
             // create payload
             const payload = {
@@ -91,17 +97,25 @@ export default function Home(){
                 if (response.ok){
                     const result = await response.json();
                     console.log("Success:", result);
+                    
+                    // clear cart
+                    setCart({})
+
                     // link over to the checkout complete
                     location.href = "/checkout/complete"
                 }
                 else{
-                    throw error = await response.json();
+                    throw await response.json();
                 }
             } catch (error) {
-                alert("Error:", error);
+                alert("Something went wrong with your payment. Please try again:)");
+                console.log("Payment failure", error)
             }
         }
         else{
+            if(status=="error"){
+                alert("Something went wrong with your payment. Please try again :)");
+            }
             console.log(status)
             console.log(response)
         }
@@ -133,7 +147,7 @@ export default function Home(){
             
 
             <DetailsForm
-            form = {[register, errors]}
+            form = {[register, control, errors]}
             /> 
 
 
@@ -154,56 +168,3 @@ export default function Home(){
     )
 }
 
-const DetailsForm = ({form}) => {
-
-    const [register, errors]  = form;
-    console.log(errors)
-
-    const formBorderStyle = {
-        error:"md:col-span-2 border-red-500 border-1", 
-        noError: "md:col-span-2"
-    }
-
-    return(
-        <div>
-        <form>
-            <h2 className="text-lg pb-2 pt-4 font-semibold">Contact Info</h2>
-            
-            <div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-2 pl-2"
-            > 
-                <label>Email Address*</label>
-                <input {...register("email", {required:"Email required"})}
-                className={"md:col-span-2 rounded-md pl-2" + (errors.email ? " border-red-500 border-2" : "")}
-                />
-                <label>Phone Number*</label>
-                <input {...register("phone", {required:true})}
-                className={"md:col-span-2 rounded-md pl-2" + (errors.phone ? " border-red-500 border-2" : "")}
-                />
-            </div>
-            
-            <h2 className="text-lg pb-2 pt-4 font-semibold">Shipping Address</h2>
-            <div
-            className="grid grid-cols-1 md:grid-cols-3 gap-2 pl-2"
-            >
-                <label>Name*</label>
-                <input {...register("fullName", {required:true})}
-                className={"md:col-span-2 rounded-md pl-2" + (errors.fullName ? " border-red-500 border-2" : "")}
-                />
-                <label>Address Line 1*</label>
-                <input {...register("address1", {required:true})}
-                className={"md:col-span-2 rounded-md pl-2" + (errors.address1 ? " border-red-500 border-2" : "")}
-                />
-                <label>Address Line 2</label>
-                <input {...register("address2")}
-                className={"md:col-span-2 rounded-md pl-2" + (errors.address2 ? " border-red-500 border-2" : "")}
-                />
-                <label>Post Code*</label>
-                <input {...register("postCode", {required:true})}
-                className={"md:col-span-2 rounded-md pl-2" + (errors.postCode ? " border-red-500 border-2" : "")}
-                />
-            </div>
-        </form>
-        </div>
-    )
-}

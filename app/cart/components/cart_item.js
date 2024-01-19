@@ -9,10 +9,12 @@ import {getInventory} from "@/app/publications/components/getInventory"
 
 
 
-export default function CartItem({item_key, checkout}){
+export default function CartItem({cart, item_key, checkout}){
     
-    // get context
-    const [cart, setCart] = useContext(CartContext)
+    // get context setter, but let cart be passed in from above
+    const [_, setCart] = useContext(CartContext)
+
+    
     const [quantity, setQuantity] = useState(cart[item_key].quantity)
 
     const publication = publications[item_key];
@@ -74,8 +76,6 @@ export default function CartItem({item_key, checkout}){
 
             {(quantity == 0 || inventory.soldOut == true) && <Remove 
                 setQuantity={setQuantity}
-                cart={cart}
-                setCart={setCart}
                 item_key={item_key}
             />}
 
@@ -150,7 +150,9 @@ function QuantityPicker({item_key, quantity, setQuantity}){
     )
 }
 
-function Remove({cart, setCart, setQuantity, item_key}){
+function Remove({setQuantity, item_key}){
+    const [cart, setCart] = useContext(CartContext)
+
     return(
         <div
         className="flex flex-col col-span-2 border-2 border-black bg-white w-full h-full"

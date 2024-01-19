@@ -1,7 +1,10 @@
 import CartItem from "@/app/cart/components/cart_item"
 import ShippingItem from "./shipping_item"
 
+
 export default function Basket({cart, shippingPrice}){
+    console.log(cart)
+
 
     return(
         <div
@@ -9,7 +12,7 @@ export default function Basket({cart, shippingPrice}){
             >
             {Object.keys(cart).map(item_key => (
                     <CartItem
-                        key={item_key}
+                        cart={cart}
                         item_key={item_key}
                         checkout={true}
                     />

@@ -25,6 +25,7 @@ export default function Home(){
             {/* map over the items in the cart by key */}
                 {Object.keys(cart).map(item_key => (
                     <CartItem
+                        cart={cart}
                         key={item_key}
                         item_key={item_key}
                         checkout={false}
@@ -33,9 +34,9 @@ export default function Home(){
 
             </div>
             
-            <CheckoutButton
+            {Object.keys(cart).length > 0 &&  <CheckoutButton
             cart={cart} 
-            />     
+            />  }   
         </div>
     )
 }
