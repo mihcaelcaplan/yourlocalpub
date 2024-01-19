@@ -89,7 +89,7 @@ const CountrySelect = ({form})=>{
         })}
         className={"md:col-span-2 rounded-md pl-2" + (errors.country ? " border-red-500 border-2" : "")}
         >
-                <option value="Afghanistan">Afghanistan</option>
+                {/* <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -317,10 +317,10 @@ const CountrySelect = ({form})=>{
                 <option value="Tuvalu">Tuvalu</option>
                 <option value="Uganda">Uganda</option>
                 <option value="Ukraine">Ukraine</option>
-                <option value="United Arab Emirates">United Arab Emirates</option>
-                <option 
-                value="United Kingdom">United Kingdom</option>
-                <option value="United States">United States</option>
+                <option value="United Arab Emirates">United Arab Emirates</option> */}
+                <option value="United Kingdom">United Kingdom</option>
+                <option value ="Int. Shipping">For international shipping, please email us 😀 (coming soon)</option>
+                {/* <option value="United States">United States</option>
                 <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
                 <option value="Uruguay">Uruguay</option>
                 <option value="Uzbekistan">Uzbekistan</option>
@@ -333,7 +333,7 @@ const CountrySelect = ({form})=>{
                 <option value="Western Sahara">Western Sahara</option>
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
-                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Zimbabwe">Zimbabwe</option> */}
         </select>
     );
 }
