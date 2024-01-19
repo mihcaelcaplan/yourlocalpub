@@ -52,7 +52,7 @@ export const BrickWall = ({height, parent})=>{
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick5 ${brickHeight}`}>
                 <Brick borderTB={true} borderRL={true}/>
-                <div className="flex bg-yellow-400 text-black justify-center border border-black"><a 
+                <div className="flex bg-yellow-400 text-white justify-center border border-black tracking-wider"><a 
                 className="text-[1.5vw] lg:text-[1.2vw] self-center font-semibold"
                 href="mailto:contact@yourlocalpublication.com"
                 >Contact</a></div>
