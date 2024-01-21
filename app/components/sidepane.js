@@ -6,8 +6,8 @@ import { BrickWall } from "./about_wall"
 
 export default function SidePane(){
     return(
-        <div className='flex flex-col text-black border-l-2 border-black fixed top-0 leading-5 h-full pt-2'>
-       
+        <div className=' text-black border-l-2 border-black fixed top-0 leading-5 h-full pt-2'>
+       <div className="flex flex-col h-full">
        <Nav 
         nav_padding={"p-4"}
        />
@@ -17,6 +17,7 @@ export default function SidePane(){
         <BrickWall
         parent={"sidepane"}
         />
+        </div>
        
      </div>
 
