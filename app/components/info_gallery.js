@@ -150,7 +150,7 @@ export default function InfoGallery({publication, image_paths}){
             
             {fullScreen && <div
             id="back"
-            className="fixed z-40 left-0  opacity-60 h-full text-white text-[5rem] p-4"
+            className="fixed z-40 top-0 left-0 h-full w-1/4"
             onClick={(e)=>handleFullscreenClick(e)}
             >
                 {/* <div
@@ -161,7 +161,7 @@ export default function InfoGallery({publication, image_paths}){
             
             {fullScreen && <div
             id="forward"
-            className="fixed z-40 right-0 opacity-60 h-full text-white text-[5rem] p-4 "
+            className="fixed z-40 top-0 right-0 h-full w-1/4git "
             onClick={(e)=>handleFullscreenClick(e)}
             >
                 {/* <div
