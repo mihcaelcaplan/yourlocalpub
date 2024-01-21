@@ -8,14 +8,14 @@ export default function Card({publication_key}) {
     return (
         <div className='flex flex-col bg-pubmain drop-shadow-sm h-full w-full'>
             <a href={publication.route}>
-            <div className='flex flex-col bg-black relative justify-center'>
+            <div className='flex flex-col bg-pubmain relative justify-center'>
                 <Image 
                     className="border-2 border-black"
                     src={publication.coverImage}
                     alt={`$(publication.title) cover image`}
                     // fill
-                    height={100}
-                    width={100}
+                    height={80}
+                    width={80}
                     quality={30}
                     sizes="100vw"
                     style={{

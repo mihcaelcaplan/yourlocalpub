@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function Header(){
 
     return(
-        <div className="flex flex-col lg:flex-row pt-2 pl-4 pr-4 bg-pubmain sticky top-0 z-50">
+        <div className="flex flex-col lg:flex-row pt-2 pl-4 pr-4 bg-pubmain sticky top-0 z-10">
               
             <div className='animate-pulse w-full'>
                 <a href="/"

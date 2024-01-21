@@ -4,11 +4,7 @@ import InfoGallery from "@/app/components/info_gallery"
 import ItemDescription from "../components/itemDescription"
 
 import publications from "@/public/publication_list"
-
-
-
-const fs = require("fs")
-const path = require("path")
+import getImages from "../components/getImages"
 
 // data structure
 const publication_key = "babe_rainbow"
@@ -31,17 +27,4 @@ export default function Home(){
             />
         </div>
     )
-}
-
-function getImages(images_location){
-    // look in the publication.images_location for all images
-    const image_dir = path.join(process.cwd(), "/public"+images_location)
-    
-    const all_images = fs.readdirSync(image_dir)
-
-    const image_paths = all_images.map(image=>(
-        path.join(images_location, image)
-    ))
-    
-    return image_paths
 }

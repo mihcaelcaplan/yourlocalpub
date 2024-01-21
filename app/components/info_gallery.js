@@ -88,12 +88,13 @@ export default function InfoGallery({publication, image_paths}){
         <div
         className="pb-6 sm:pl-4 sm:pr-4 max-w-[750px] m-auto flex flex-col items-center " 
         >
-                <div className={fullScreen ? "absolute z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[100%] md:w-[90vw] h-[80vw] md:h-[100%] bg-black mb-2 justify-center" : 
-                                             "flex flex-col w-[100%] bg-black relative mb-2 justify-center"}
+                <div id="bg" className={fullScreen ? "absolute z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full bg-black mb-2 justify-center" : 
+                                             "flex flex-col w-[100%] bg-white relative mb-2 justify-center"}
                 >
                 <Image 
                     {...handlers}
-                    className={fullScreen ? "z-20" : "" }
+                    onClick={()=>setFullscreen(true)}
+                    className={fullScreen ? "z-30" : "" }
                     priority={true}
                     src={activeImage}
                     alt={`${publication.title} cover`}
@@ -114,7 +115,7 @@ export default function InfoGallery({publication, image_paths}){
                 
           
             <div
-            className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start"
+            className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start overflow-hidden"
             >
             {allImages.map(bookImage=>(
                 <Image 
@@ -139,35 +140,34 @@ export default function InfoGallery({publication, image_paths}){
                 id="bg"
                 className="bg-black fixed top-0 left-0 h-screen w-screen z-10"
                 onClick={(e)=>handleFullscreenClick(e)}
-            >
-                <div className="mr-2 mt-2 right-10 text-[0.7rem] leading-[1rem] rounded-full bg-gray-200 opacity-70 hover:bg-red-800 w-4 h-4 text-center ml-auto" 
-                    onClick={()=>{setFullscreen(false)}}
-                >
-                X
-                </div>
-                
-                <div
-                id="back"
-                className="fixed z-30 left-0  opacity-60 h-full text-white text-[5rem] p-4"
-                onClick={(e)=>handleFullscreenClick(e)}
-                >
-                    <div
-                    id="back"
-                    className=" relative top-1/2 -translate-y-1/2"
-                    >&lt;</div>
-                </div>
-                
-                <div
-                id="forward"
-                className="fixed z-30 right-0 opacity-60 h-full text-white text-[5rem] p-4 "
-                onClick={(e)=>handleFullscreenClick(e)}
-                >
-                    <div
-                    id="forward"
-                    className="relative top-1/2 -translate-y-1/2"
-                    >&gt;</div>
-                </div>
+            />}
 
+            {fullScreen && <div className="fixed top-6 right-6 w-4 h-4 xl:w-5 xl:h-5 text-[0.7rem] leading-[1.1rem] xl:text-[1rem] xl:leading-[1.3rem] rounded-full bg-gray-100 opacity-70 hover:bg-red-700  text-center z-50" 
+                onClick={()=>{setFullscreen(false)}}
+            >
+            X
+            </div>}
+            
+            {fullScreen && <div
+            id="back"
+            className="fixed z-40 left-0  opacity-60 h-full text-white text-[5rem] p-4"
+            onClick={(e)=>handleFullscreenClick(e)}
+            >
+                {/* <div
+                id="back"
+                className=" relative top-1/2 -translate-y-1/2"
+                >&lt;</div> */}
+            </div>}
+            
+            {fullScreen && <div
+            id="forward"
+            className="fixed z-40 right-0 opacity-60 h-full text-white text-[5rem] p-4 "
+            onClick={(e)=>handleFullscreenClick(e)}
+            >
+                {/* <div
+                id="forward"
+                className="relative top-1/2 -translate-y-1/2"
+                >&gt;</div> */}
             </div>}
             
         </div>
