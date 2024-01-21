@@ -12,7 +12,6 @@ export default function Home(){
             <div
             className="pt-10">
                 <BrickWall 
-                height={"4vw"}
                 parent={"about_us"}
                 />
             </div>

@@ -42,12 +42,12 @@ export default function RootLayout({ children }) {
         <main className="flex flex-row h-full" >
         <CartContext.Provider value={[cart, setCart]}>
             {/* main screen */}
-            <div className="bg-pubmain md:w-2/3 md:p-2">
+            <div className="bg-pubmain md:flex-1 md:p-2">
                 <Header />
                 {children}
           </div>        
           {/* info pane */}
-          <div className='bg-pubmain md:w-1/3 xl:w-[40%] md:flex h-auto min-h-screen'>
+          <div className='bg-pubmain lg:w-[485px] h-auto min-h-screen'>
               <SidePane />
           </div>
         </CartContext.Provider>

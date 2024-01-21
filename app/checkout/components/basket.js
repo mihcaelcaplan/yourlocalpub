@@ -8,7 +8,7 @@ export default function Basket({cart, shippingPrice}){
 
     return(
         <div
-            className="grid grid-cols-1 gap-2"
+            className="grid grid-cols-1 gap-4"
             >
             {Object.keys(cart).map(item_key => (
                     <CartItem

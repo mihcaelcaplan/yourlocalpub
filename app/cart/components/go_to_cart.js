@@ -3,7 +3,7 @@ export default function GoToCart({publication_key, isHidden, setHidden}){
 
     return (
         <div 
-            className={isHidden+" flex flex-col fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-2/3 md:h-1/2 w-4/6 bg-slate-100 z-10 shadow-2xl border-black border-2"}
+            className={isHidden+" flex flex-col fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-1/3 lg:h-1/2 w-4/6 xl:w-1/2 bg-slate-100 z-10 shadow-2xl border-black border-2"}
         >
             <div>
             <div className="absolute top-0 bg-stone-200 z-10 w-full ml-auto border-b-black border-b-2">
@@ -18,8 +18,8 @@ export default function GoToCart({publication_key, isHidden, setHidden}){
                     <BrickWall />
                 </div>
                 
-                <div className="absolute top-1/3 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                    <div className="text-center m-auto pl-4 pr-4 text-xl md:text-[1.4rem] md:leading-8 bg-white border-2 border-black w-auto">
+                <div className="absolute top-1/3 -translate-y-1/2 left-1/2 -translate-x-1/2 w-3/4">
+                    <div className="text-center m-auto p-4 lg:p-6 text-sm lg:text-2xl lg:leading-8 bg-white border-2 border-black w-auto">
                         You&apos;re a right good pub-goer.
                         <br/>
                         Well on ya, mate!
@@ -51,48 +51,56 @@ const BrickWall = ()=>{
     return(
         <div className="h-full">
             <div className={`grid grid-rows-1 grid-cols-brick1 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
+                <Brick borderT={true} borderB={false} borderR={false} borderL={false}/>
+                <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick2 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={false}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick3 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={false}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
             </div>
-            <div className={`grid grid-rows-1 grid-cols-brick4 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <a href="/" className="flex bg-green-600 text-white justify-center border border-black"><span  className="text-[1.2vh] md:text-[1.5vw] self-center font-semibold">Keep Shopping</span></a>
-                <Brick  borderTB={true} borderRL={true}/>
-                <a href="/cart" className="flex bg-yellow-400 text-white justify-center border border-black"><span  className="text-[1.2vh] md:text-[1.5vw] self-center font-semibold">Go to Cart</span></a>
-                <Brick  borderTB={true} borderRL={true}/>
+            <div className={`grid grid-rows-1 grid-cols-brickGoToCart ${brickHeight}`}>
+                 <Brick borderT={true} borderB={false} borderR={true} borderL={false}/>
+                <a href="/" className="flex bg-green-600 text-white justify-center border-t-2 border-t-black">
+                    <div 
+                    className="text-[0.75rem] lg:text-2xl md:text-[1.5vw] leading-4 self-center font-semibold text-center"
+                    >Keep Shopping</div>
+                </a>
+                 <Brick borderT={true} borderB={false} borderR={true} borderL={true}/>
+                <a href="/cart" className="flex bg-yellow-400 text-white justify-center border-t-2 border-t-black">
+                    <div 
+                    className="text-[0.75rem] lg:text-2xl md:text-[1.5vw] leading-4 self-center font-semibold text-center"
+                    >Go to Cart</div>
+                </a>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick5 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={false}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
             </div>
             <div className={`grid grid-rows-1 grid-cols-brick2 ${brickHeight}`}>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
-                <Brick  borderTB={true} borderRL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={false}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
+                 <Brick borderT={true} borderB={false} borderR={false} borderL={true}/>
             </div>
 
         </div>

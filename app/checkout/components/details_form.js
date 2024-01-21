@@ -11,17 +11,15 @@ export default function DetailsForm({form}) {
     const [register, control, errors]  = form;
     console.log(errors)
 
-    const formBorderStyle = {
-        error:"md:col-span-2 border-red-500 border-1", 
-        noError: "md:col-span-2"
-    }
-
     return(
-        <div>
+        <div className="bg-white border-2 border-black mt-4 p-4">
         <form>
-            <h2 className="text-lg pb-2 pt-4 font-semibold">Shipping Address</h2>
+            <h2 className="text-lg   font-semibold">Shipping Address:</h2>
             <div
-            className="grid grid-cols-1 md:grid-cols-3 gap-2 pl-2"
+            className="pb-4"
+            >*international shipping coming soon! For now, please contact us via <a className=" text-blue-400 underline" href="mailto:contact@yourlocalpublication.com">email!</a></div>
+            <div
+            className="grid grid-cols-1 md:grid-cols-3 gap-2"
             >
                 <label htmlFor="country">Country*</label>
                 <CountrySelect
@@ -29,40 +27,46 @@ export default function DetailsForm({form}) {
                  />
                 <label htmlFor="shippingName">Name*</label>
                 <input id="shippingName" {...register("fullName", {required:true})}
-                className={"md:col-span-2 rounded-md ml-2" + (errors.fullName ? " border-red-500 border-2" : "")}
+                className={"md:col-span-2 p-2 rounded-md border border-gray-400" + (errors.fullName ? " bg-red-200" : "")}
                 />
                 <label htmlFor="address1">Address Line 1*</label>
                 <input id="address1" {...register("address1", {required:true})}
-                className={"md:col-span-2 rounded-md ml-2" + (errors.address1 ? " border-red-500 border-2" : "")}
+                className={"md:col-span-2 p-2 rounded-md border border-gray-400" + (errors.address1 ? " bg-red-200" : "")}
                 />
                 <label htmlFor="address2">Address Line 2</label>
                 <input id="address2" {...register("address2")}
-                className={"md:col-span-2 rounded-md ml-2" + (errors.address2 ? " border-red-500 border-2" : "")}
+                className={"md:col-span-2 p-2 rounded-md border border-gray-400" + (errors.address2 ? " bg-red-200" : "")}
                 />
                 <label htmlFor="postcode">Post Code*</label>
                 <input id="postcode" {...register("postCode", {required:true})}
-                className={"md:col-span-2 rounded-md ml-2" + (errors.postCode ? " border-red-500 border-2" : "")}
+                className={"md:col-span-2 p-2 rounded-md border border-gray-400" + (errors.postCode ? " bg-red-200" : "")}
                 />
             </div>
             
-            <h2 className="text-lg pb-2 pt-4 font-semibold">Contact Info</h2>
+            <h2 className="text-lg pb-2 pt-4 font-semibold">Contact Info:</h2>
             <div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-2 pl-2"
+            className="grid grid-cols-1 md:grid-cols-3 gap-2 "
             > 
                 <label htmlFor="email">Email Address*</label>
                 <input id="email" {...register("email", {required:"Email required"})}
-                className={"md:col-span-2 rounded-md ml-2" + (errors.email ? " border-red-500 border-2" : "")}
+                className={"md:col-span-2 p-2 rounded-md border border-gray-400"  + (errors.email ? " bg-red-200" : "")}
                 />
                 <label htmlFor="phoneNum">Phone Number*</label>
                 <Controller 
                     control={control}
                     name="phoneNum"
-                    render={({ field: { onChange, onBlur, value, ref } }) => (
+                    render={({ field: {onChange, onBlur, value, ref } }) => (
                         <PhoneInput
-                        {...register("phoneNum")} 
+                        {...register("phoneNum", {required:"Phone number required"}) } 
                         country={'gb'}
-                        onChange={onChange}
+                        onChange={(value, country, e, formattedValue)=>onChange(value)}
                         enableSearch={true}
+                        inputStyle={{
+                            background: errors.phoneNum ? "rgb(254 202 202" : "",
+                            fontSize: "1rem",
+                            lineHeight: "1.5rem",
+                            width:"100%"
+                            }}
                         inputProps={{
                             name: 'phoneNum',
                             required: true,
@@ -87,7 +91,7 @@ const CountrySelect = ({form})=>{
             required:true,
             validate:value=>value==="United Kingdom"||"NUh uh"
         })}
-        className={"md:col-span-2 rounded-md pl-2" + (errors.country ? " border-red-500 border-2" : "")}
+        className={"md:col-span-2 p-2 rounded-md border border-gray-400" + (errors.country ? " border-red-500 border-2" : "")}
         >
                 {/* <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
@@ -319,7 +323,7 @@ const CountrySelect = ({form})=>{
                 <option value="Ukraine">Ukraine</option>
                 <option value="United Arab Emirates">United Arab Emirates</option> */}
                 <option value="United Kingdom">United Kingdom</option>
-                <option value ="Int. Shipping">For international shipping, please email us 😀 (coming soon)</option>
+                {/* <option value ="Int. Shipping">For international shipping, please email us 😀 (coming soon)</option> */}
                 {/* <option value="United States">United States</option>
                 <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
                 <option value="Uruguay">Uruguay</option>

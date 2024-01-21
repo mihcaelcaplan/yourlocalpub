@@ -82,13 +82,14 @@ export default function InfoGallery({publication, image_paths}){
         }
     }
 
+    "xl:max-w-3xl xl:m-auto"
 
     return(
         <div
-        className="pb-6 sm:pl-4 sm:pr-4 xl:pr-24 xl:pl-24 flex flex-col items-center " 
+        className="pb-6 sm:pl-4 sm:pr-4 max-w-[750px] m-auto flex flex-col items-center " 
         >
                 <div className={fullScreen ? "absolute z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[100%] md:w-[90vw] h-[80vw] md:h-[100%] bg-black mb-2 justify-center" : 
-                                             "flex flex-col h-[70vw] md:h-[40vw] xl:h-[32vw] w-[100%] bg-black relative mb-2 justify-center"}
+                                             "flex flex-col w-[100%] bg-black relative mb-2 justify-center"}
                 >
                 <Image 
                     {...handlers}
@@ -98,14 +99,14 @@ export default function InfoGallery({publication, image_paths}){
                     alt={`${publication.title} cover`}
                     quality={90}
                     // sizes="100vw"
-                    fill
+                    // fill
+                    height={100}
+                    width={100}
+                    sizes="100vw"
                     style={{
-                        objectFit: "cover",
-                        // width: "100%",
-                        // height: "auto"
-                    }}
-                    onClick={()=>{
-                        setFullscreen(true);
+                        // objectFit:"contain"
+                        width: '100%',
+                        height: '75%',
                     }}
                 />
 

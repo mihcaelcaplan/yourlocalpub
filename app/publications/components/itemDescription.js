@@ -31,7 +31,7 @@ export default function ItemDescription({publication, publication_key}){
 
 
     return(
-        <div className="grid grid-cols-1 mr-2 ml-2 sm:ml-4 sm:mr-4 font-[475] leading-5">
+        <div className="grid grid-cols-1 mr-2 ml-2 sm:ml-4 sm:mr-4 font-bold leading-5">
                 <b>{publication.title}</b>
                 
                 <ul>
@@ -46,7 +46,7 @@ export default function ItemDescription({publication, publication_key}){
                 <p className="mt-2 mb-4 w-inherit ">{publication.info}</p>
                 
                 <div className="flex flex-row justify-between items-center">
-                    <div className="flex flex-col text-sm md:">
+                    <div className="flex flex-col md:">
                            {!inventory.soldOut && <div>
                                 {`(${inventory.lockedInventory}/${publication.stockQuantity})`}
                             </div>}
@@ -63,7 +63,7 @@ export default function ItemDescription({publication, publication_key}){
                     
                     {inventory.soldOut && 
                     <div
-                    className="h-6 w-auto p-4  text-stone-800 border-pubred border-2 rounded-full text-center align-middle md:text-[1.25] leading-[0rem] text-[.75rem] whitespace-nowrap"
+                    className="h-6 w-auto p-4 bg-pubbrickblue font-semibold text-white border-black border-2 text-center align-middle leading-[0rem] text-[0.75rem]  sm:text-[1rem]  md:text-[1.25rem] whitespace-nowrap"
                     > Sold out!</div>}
 
                     {!inventory.soldOut && 

@@ -122,7 +122,7 @@ export default function Home(){
     };
 
     return(
-        <div className="flex flex-col p-4">
+        <div className="flex flex-col pl-6 pr-6">
             {/* load sumup payment widget */}
             
             <Script
@@ -130,14 +130,14 @@ export default function Home(){
             onLoad={()=>handlePaymentWidgetLoad()}
             />
             
-            <h1 className=" text-2xl font-semibold pb-6">Checkout</h1>
+            <h1 className=" text-2xl font-semibold pb-4">Checkout</h1>
 
             <div
-            className="bg-pubmain p-2 drop-shadow-sm">
+            className="bg-pubmain drop-shadow-sm">
             
             <h2 className="text-lg pb-2 font-semibold">Order</h2>
             
-            <div className="pl-2">
+            <div className="">
                 <Basket 
                     cart={cart}
                     shippingPrice={shippingPrice}
@@ -154,7 +154,7 @@ export default function Home(){
             <h2 className="text-lg pb-2 pt-4 font-semibold">Payment</h2>
             <div 
             id="sumup-card"
-            className="pt-2 mb-4 bg-white border-2 border-black ml-2" />
+            className="pt-2 mb-4 bg-white border-2 border-black" />
 
             <div
             onClick={handleSubmit(handleOrderSubmit)}

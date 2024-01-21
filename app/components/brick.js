@@ -1,20 +1,20 @@
-export const Brick = ({position, borderTB, borderRL, span})=>{
-    const borderTBFormat = borderTB ? "border-t-black border-t border-b-black border-b" : ""
-    const borderRLFormat = borderRL ? "border-l-black border-l border-r-black border-r" : ""
+export const Brick = ({position, borderT, borderB, borderR ,borderL, span})=>{
+    const borderTFormat = borderT ? "border-t border-t-2 border-t-black " :""
+    const borderBFormat = borderB ? "border-b border-b-2 border-b-black" : ""
+    const borderRFormat = borderR ? "border-r border-r-2 border-r-black" : ""
+    const borderLFormat = borderL ? "border-l border-l-2 border-l-black" : ""
     const spanFormat = (span > 1) ? `col-span-${span}` : ""
     // const colStartFormat = `col-start-${position}`
 
     return(
-        <div className={`bg-pubbrick ${borderTBFormat} ${borderRLFormat} ${spanFormat}`} />
+        <div className={`bg-pubbrick ${borderTFormat} ${borderBFormat} ${borderRFormat} ${borderLFormat} ${spanFormat}`} />
     )
 }
 
-export const Spacer = ({position, borderTB, borderRL, span})=>{
-    const borderTBFormat = borderTB ? "border-t-black border-t border-b-black border-b" : ""
-    const borderRLFormat = borderRL ? "border-l-black border-l border-r-black border-r" : ""
-    const spanFormat = (span > 1) ? `col-span-${span}` : ""
+export const Spacer = ()=>{
+
 
     return(
-        <div className={` ${borderTBFormat} ${borderRLFormat} ${spanFormat}`} />
+        <div className={""} />
     )
 }

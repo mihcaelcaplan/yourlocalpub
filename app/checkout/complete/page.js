@@ -1,6 +1,5 @@
 'use client'
 
-// TODO: clear localStorage onload
 import Basket from "../components/basket"
 import { useContext, useRef, useEffect, useState} from "react";
 import { CartContext } from "@/app/components/cart_context";
@@ -33,15 +32,14 @@ export default function CheckoutComplete(){
 
     return(
         <div
-        className="flex flex-col"
+        className="flex flex-col pt-4 pl-6 pr-4 font-bold"
         >
-            <div className="">
-               <span> Thank you for supporting independent artists 😁</span>
-               <br/>
-               <span> Your order # is: {checkoutId.current}</span>
+            <span> Thank you for your support!</span>
+            <div className="bg-white border border-2 border-black p-2">
+               <span> Order Reference: <br/>{checkoutId.current}</span>
             </div>
-            <div className="">
-                You ordered: 
+            <div className="pt-4">
+                Your order: 
             </div>
 
             
@@ -50,7 +48,7 @@ export default function CheckoutComplete(){
                 shippingPrice={shippingPrice}
             />
 
-            <div className="">
+            <div className="pt-4">
                 Total Price: {checkoutPrice.current} 
             </div>
 

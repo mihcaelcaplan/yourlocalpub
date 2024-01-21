@@ -47,10 +47,10 @@ export default function CartItem({cart, item_key, checkout}){
 
 
     return(
-        <div className="bg-white border-2 border-black drop-shadow-sm grid grid-cols-cartItem p-1 md:p-2 gap-2 justify-center text-center items-center">
+        <div className="bg-white border-2 border-black drop-shadow-sm grid grid-cols-cartItemNoImg sm:grid-cols-cartItemImg p-2 md:p-2 gap-2 justify-center text-center items-center">
             
             <a href={publications[item_key].route}
-            className="m-auto"
+            className="m-auto hidden sm:inline"
             >
             <Image 
                     className=""
@@ -70,7 +70,7 @@ export default function CartItem({cart, item_key, checkout}){
 
             <div className="flex flex-col justify-center border-r-2"
             >
-                <p className=" text-sm text-stone-700 pb-2">Title</p>
+                {/* <p className=" text-sm text-stone-700 pb-2">Title</p> */}
                 <p className="pl-2 pr-2">{publications[item_key].title}</p>
             </div>
 
@@ -80,8 +80,8 @@ export default function CartItem({cart, item_key, checkout}){
             />}
 
             {(quantity > 0 && inventory.soldOut == false) && <div className="flex flex-col justify-center border-r-2">
-                <p className=" text-sm text-stone-700">Quantity</p>
-                {checkout && <div>{cart[item_key].quantity}</div>}
+                {/* <p className=" text-sm text-stone-700">Quantity</p> */}
+                {checkout && <div>x{cart[item_key].quantity}</div>}
                 {!checkout && <QuantityPicker
                     item_key={item_key}
                     quantity={quantity}
@@ -91,7 +91,7 @@ export default function CartItem({cart, item_key, checkout}){
             </div>}
             
             {(quantity > 0 && inventory.soldOut == false) && <div className="flex flex-col justify-center">
-                <p className=" text-sm text-stone-700 pb-2">Price</p>
+                {/* <p className=" text-sm text-stone-700 pb-2">Price</p> */}
                 <p>£{publications[item_key].price}</p>
             </div>}
         
