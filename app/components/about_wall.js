@@ -16,7 +16,7 @@ export const BrickWall = ({parent})=>{
 
     return (
         <div
-        className="lg:absolute lg:bottom-0 w-full pt-2"
+        className="mt-auto fixed bottom-0 w-full pt-2"
         >   
             {/* <div className="bg-pubmain h-2 w-full"></div> */}
             <div className={`grid grid-rows-1 grid-cols-brick1 ${brickHeight}`}>
@@ -54,7 +54,7 @@ export const BrickWall = ({parent})=>{
             <div className={`grid grid-rows-1 grid-cols-brick5 ${brickHeight}`}>
                 <Brick borderT={false} borderB={false} borderR={true} borderL={false}/>
                 <div className="flex bg-pubbrickyellow text-white justify-center tracking-wider"><a 
-                className="text-[1.5vw] lg:text-[1.2vw] self-center font-semibold"
+                className="text-l self-center font-semibold"
                 href="mailto:contact@yourlocalpublication.com"
                 >Contact</a></div>
                 <Brick borderT={false} borderB={false} borderR={false} borderL={true}/>
