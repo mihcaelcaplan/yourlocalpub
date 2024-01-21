@@ -33,25 +33,6 @@ export default function Card({publication_key}) {
                     className='ml-auto border-l-2 border-black p-3'
                     >{publication.price}</div>
                 </div>
-
-                {/* <div className='flex flex-col text-sm md:text-base p-2 active:bg-gray-200'>
-                            <div
-                            className='font-medium'
-                            >{publication.title}</div>
-                            <div 
-                            className=''
-                            >{"Published in "+ publication.publicationYear}</div>
-                            <div 
-                            className='hidden sm:block'
-                            >{publication.detail}</div>
-                            <div 
-                            className='hidden sm:block'
-                            >{"Edition of "+publication.stockQuantity}</div>
-                            <div className='italic mt-auto'>
-                                <p>{"£"+publication.price}</p>
-                            </div>
-                        
-                </div> */}
             </a>
         </div>
     )

@@ -6,7 +6,7 @@ import { BrickWall } from "./about_wall"
 
 export default function SidePane(){
     return(
-        <div className='flex flex-col text-black border-l-2 border-black fixed top-0 leading-5 h-screen pt-2'>
+        <div className='flex flex-col text-black border-l-2 border-black fixed top-0 leading-5 h-full pt-2'>
        
        <Nav 
         nav_padding={"p-4"}

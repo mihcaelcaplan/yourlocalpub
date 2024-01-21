@@ -16,7 +16,7 @@ export const BrickWall = ({parent})=>{
 
     return (
         <div
-        className="mt-auto fixed bottom-0 w-full pt-2"
+        className="mt-auto fixed lg:absolute bottom-0 w-full pt-2"
         >   
             {/* <div className="bg-pubmain h-2 w-full"></div> */}
             <div className={`grid grid-rows-1 grid-cols-brick1 ${brickHeight}`}>

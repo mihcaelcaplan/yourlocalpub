@@ -9,7 +9,7 @@ export default function CartIcon(){
     const [cart, setCart] = useContext(CartContext)
 
       return(
-        <div className='flex flex-row hover:text-slate-600 font-semibold text-sm lg:text-base'>
+        <div className='flex flex-row hover:text-slate-600 font-semibold text-base'>
             <div>
                 <a href="/cart">
                     CART
