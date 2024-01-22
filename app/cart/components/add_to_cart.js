@@ -38,7 +38,7 @@ export default function AddToCart({publication_key}){
             />
             <div
                 href="/cart"
-                className="h-6 w-auto p-4 bg-indigo-700 font-semibold text-white hover:bg-indigo-400 border-black border-2 text-center align-middle leading-[0rem] whitespace-nowrap "
+                className="h-6 w-auto p-4 bg-pubbrickblue font-semibold text-white hover:bg-indigo-400 border-black border-2 text-center align-middle leading-[0rem] whitespace-nowrap "
                 onClick={()=>{
                     AddToCart()
                     setpopupHidden("visible")

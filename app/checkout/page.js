@@ -15,7 +15,8 @@ export default function Home(){
 
     // create form {register, handleSubmit}
     const {register, handleSubmit, watch, formState: {errors}, control} = useForm({mode: "onTouched"});
-    watch(errors);
+    // watch(errors);
+    watch(errors)
     
 
      // set up card obj
@@ -65,7 +66,7 @@ export default function Home(){
         }
         contactDetails.current = {
             email: data.email,
-            phone: data.phone
+            phone: data.phoneNum
         }
 
         console.log("shipping", shippingDetails.current)
@@ -158,7 +159,7 @@ export default function Home(){
 
             <div
             onClick={handleSubmit(handleOrderSubmit)}
-            className="bg-indigo-600 hover:bg-stone-200 border-2 border-black text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-sm "
+            className="bg-pubbrickblue hover:bg-stone-200 border-2 border-black text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-sm "
             >
                 Pay £{checkoutPrice.current}
             </div>

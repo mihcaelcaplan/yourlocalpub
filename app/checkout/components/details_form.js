@@ -9,7 +9,7 @@ import 'react-phone-input-2/lib/style.css'
 export default function DetailsForm({form}) {
 
     const [register, control, errors]  = form;
-    console.log(errors)
+    // console.log(errors)
 
     return(
         <div className="bg-white border-2 border-black mt-4 p-4">
@@ -55,11 +55,12 @@ export default function DetailsForm({form}) {
                 <Controller 
                     control={control}
                     name="phoneNum"
+                    rules={{required:"Phone num required."}}
                     render={({ field: {onChange, onBlur, value, ref } }) => (
                         <PhoneInput
-                        {...register("phoneNum", {required:"Phone number required"}) } 
+                        id="phoneNum"
                         country={'gb'}
-                        onChange={(value, country, e, formattedValue)=>onChange(value)}
+                        onChange={onChange}
                         enableSearch={true}
                         inputStyle={{
                             background: errors.phoneNum ? "rgb(254 202 202" : "",

@@ -36,7 +36,9 @@ export default function CheckoutComplete(){
         >
             <span> Thank you for your support!</span>
             <div className="bg-white border border-2 border-black p-2">
-               <span> Order Reference: <br/>{checkoutId.current}</span>
+               <span> Order Reference: {checkoutId.current}</span>
+               <br />
+               <span className="font-bold"> Confirmation email sent!</span>
             </div>
             <div className="pt-4">
                 Your order: 
