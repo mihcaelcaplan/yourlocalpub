@@ -1,8 +1,24 @@
 export default {
+    castle_bts: {
+        id: 4,
+        status:"active",
+        coverImage: "/castle_by_the_sea/CBTS_Grey_Front.jpg",
+        route: "/publications/castle_by_the_sea",
+        title: "Castle By the Sea", 
+        publicationYear: 2024,
+        detail:"Softcover",
+        stockQuantity: 30,
+        info: `A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.
+
+        “Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”`,
+        images_location:"/castle_by_the_sea",
+        variants: [],
+        price: 15.00
+    },
     orpheus_st: {
         id:1,
         status: "active",
-        coverImage: "/orpheus_st_paintings/1OrpheusStreet_Cover.jpg",
+        coverImage: "/orpheus_st_paintings/ND_3070_Cover.jpg",
         route: "/publications/orpheus_st_paintings",
         title: "Orpheus Street Paintings",
         publicationYear: 2023,
@@ -16,7 +32,7 @@ export default {
     below_bunyan:{
         id:2,
         status:"active",
-        coverImage: "/below_bunyan/1BelowBunyan_Grey_Cover.jpg",
+        coverImage: "/below_bunyan/BelowBunyan_Grey_01.jpg",
         route: "/publications/below_bunyan",
         title: "Below Bunyan",
         publicationYear: 2021,
@@ -30,7 +46,7 @@ export default {
     babe_rainbow: {
         id: 3,
         status:"active",
-        coverImage: "/babe_rainbow/1MHC_Zine_Grey_Cover.jpg",
+        coverImage: "/babe_rainbow/MHC_Zine_Grey_01.jpg",
         route: "/publications/babe_rainbow",
         title: "Mildly High on the Babe Rainbow", 
         publicationYear: 2023,
@@ -40,6 +56,7 @@ export default {
         images_location:"/babe_rainbow",
         variants: [],
         price: 50.00
-    }
+    },
+    
 }
  
