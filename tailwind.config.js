@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -28,8 +29,9 @@ module.exports = {
         pubbrickgreen: '#008979',
         pubbrickyellow: '#f1c232',
         pubbrickblue: '#4554af',
-      }
+      },
     },
+  
   },
   plugins: [],
 }
