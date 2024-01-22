@@ -43,7 +43,7 @@ export default function ItemDescription({publication, publication_key}){
                     >{publication.detail}</li>
                 </ul>
             
-                <p className="mt-2 mb-4 w-inherit ">{publication.info}</p>
+                <div className="mt-2 mb-4 w-inherit ">{publication.info}</div>
                 
                 <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col md:">

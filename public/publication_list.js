@@ -8,9 +8,8 @@ export default {
         publicationYear: 2024,
         detail:"Softcover",
         stockQuantity: 30,
-        info: `A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.
-
-        “Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”`,
+        // info: 'A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”',
+        info: <div><p>A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.</p><br/> <p>“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”</p></div>,
         images_location:"/castle_by_the_sea",
         variants: [],
         price: 15.00
