@@ -58,7 +58,7 @@ export default function Card({publication_key}) {
                 <div className='flex flex-row text-lg active:bg-gray-200 border-black border-b-2 border-l-2 border-r-2'>
                     <div
                     // ref={titleRef}
-                    className='p-3 leading-5 h-[60px]'
+                    className='p-3 leading-9 h-[60px]'
                     > <span ref={titleRef}>{publication.title}</span></div>
                     <div
                     className='ml-auto border-l-2 border-black p-3'
