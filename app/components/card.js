@@ -15,7 +15,7 @@ export default function Card({publication_key}) {
           // const height = titleRef.current.offsetHeight
           // const lineHeight = +getComputedStyle(titleRef.current).lineHeight.slice(0,2)
           const textHeight = titleRef.current.getBoundingClientRect().height
-          if(textHeight> 20.5){
+          if(textHeight> 30){
             // console.log("i'm wrapping..")
             // titleRef.current.style["font-size"] = "1rem"
             titleRef.current.style["line-height"] = "1.25rem"
