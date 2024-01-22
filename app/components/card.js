@@ -16,18 +16,20 @@ export default function Card({publication_key}) {
           const lineHeight = +getComputedStyle(titleRef.current).lineHeight.slice(0,2)
           console.log(height, lineHeight)
           if(height> 3*lineHeight){
-            titleRef.current.style["font-size"] = "0.8frem"
-            titleRef.current.style["line-height"] = "1.2rem"
+            // titleRef.current.style["font-size"] = "1rem"
+            // titleRef.current.style["line-height"] = "1.25rem"
             // titleRef.current.style["letter-spacing"] = "-0.05em"
           }
           else{
-            // titleRef.current.style["letter-spacing"] = "0em"
+            // titleRef.current.style["font-size"] = "1rem"
+            // titleRef.current.style["line-height"] = "2rem"
+
 
           }
         }
         window.addEventListener('resize', updateTitle);
         updateTitle();
-        return () => window.removeEventListener('resize', updateSize);
+        return () => window.removeEventListener('resize', updateTitle);
       }, [titleRef.current]);
     
 
@@ -52,10 +54,10 @@ export default function Card({publication_key}) {
                     }}
                 />
             </div>
-                <div className='flex flex-row text-md md:text-base active:bg-gray-200 border-black border-b-2 border-l-2 border-r-2'>
-                    <div f
+                <div className='flex flex-row text-lg active:bg-gray-200 border-black border-b-2 border-l-2 border-r-2'>
+                    <div
                     ref={titleRef}
-                    className='p-3 leading-5'
+                    className='p-3 leading-5 h-[60px]'
                     >{publication.title}</div>
                     <div
                     className='ml-auto border-l-2 border-black p-3'
