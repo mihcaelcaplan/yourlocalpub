@@ -18,7 +18,7 @@ export default function Card({publication_key}) {
           if(textHeight> 30){
             // console.log("i'm wrapping..")
             // titleRef.current.style["font-size"] = "1rem"
-            titleRef.current.style["line-height"] = "1.25rem"
+            titleRef.current.style["line-height"] = "1.3rem"
             // titleRef.current.style["letter-spacing"] = "-0.05em"
           }
           else{
@@ -31,7 +31,7 @@ export default function Card({publication_key}) {
         window.addEventListener('resize', updateTitle);
         updateTitle();
         return () => window.removeEventListener('resize', updateTitle);
-      }, [titleRef.current]);
+      }, [titleRef.current])
     
 
 
@@ -55,13 +55,19 @@ export default function Card({publication_key}) {
                     }}
                 />
             </div>
-                <div className='flex flex-row text-lg active:bg-gray-200 border-black border-b-2 border-l-2 border-r-2'>
+                <div className='flex flex-row active:bg-gray-200 border-black border-b-2 border-l-2 border-r-2 leading-3'>
                     <div
                     // ref={titleRef}
-                    className='p-3 leading-9 h-[60px]'
-                    > <span ref={titleRef}>{publication.title}</span></div>
+                    className='p-3 h-[60px]'
+                    >
+                      <span 
+                      ref={titleRef}
+                      className='leading-9 text-lg'
+                      >{publication.title}</span>
+                    </div>
+                    
                     <div
-                    className='ml-auto border-l-2 border-black p-3'
+                    className='ml-auto border-l-2 border-black p-3 text-lg leading-9'
                     >{publication.price}</div>
                 </div>
             </a>
