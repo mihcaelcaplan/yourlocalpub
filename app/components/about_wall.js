@@ -1,13 +1,18 @@
-import {Brick, Spacer} from "@/app/components/brick.js"
+'use client'
 
-export const BrickWall = ({parent})=>{
+import {Brick, Spacer} from "@/app/components/brick.js"
+export const BrickWall = ({parent, style})=>{
+
     let brickHeight;
+    let displayStyle = "fixed"
+    
     switch(parent){
         case "sidepane":
             brickHeight =  "h-[40px]"
             break;
         case "about_us":
             brickHeight =  "h-[40px]"
+            displayStyle = style
             break;
         default:
             brickHeight =  "h-[40px]"
@@ -16,7 +21,7 @@ export const BrickWall = ({parent})=>{
 
     return (
         <div
-        className="mt-auto fixed lg:absolute bottom-0 w-full pt-2"
+        className={`mt-auto ${displayStyle} lg:absolute bottom-0 w-full pt-2`}
         >   
             {/* <div className="bg-pubmain h-2 w-full"></div> */}
             <div className={`grid grid-rows-1 grid-cols-brick1 ${brickHeight}`}>

@@ -1,6 +1,8 @@
-export default function Info(){
+export default function Info({infoRef}){
     return(
-        <div className=' pl-12 pr-12 pt-4 font-medium text-lg leading-5 pb-[260px] overflow-scroll'>
+        <div 
+        ref={infoRef}
+        className=' flex-1 pl-12 pr-12 pt-4 font-medium text-lg leading-5 pb-4 lg:pb-[260px] overflow-scroll'>
 
         Your Local Pub is a independent small press created by Brad Gilbert and Michael Caplan. We want to be a resource for small artists and designers who don’t always have good options to start publishing collections of their work. We aim to release a new artists work monthly.         <br />
         <br />

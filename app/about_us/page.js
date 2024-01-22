@@ -1,29 +1,35 @@
 'use client'
 import Info from "../components/info";
-import { Brick, Spacer } from "@/app/components/brick"
 import { BrickWall } from "../components/about_wall";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect} from "react";
 
 
 export default function Home(){
-
-    const headerHeight = useRef;
+    
+    const infoRef = useRef();
+    const aboutUsStyle = useRef()
 
     useEffect(()=>{
-        const currentHeaderHeight = document.getElementById("header").offsetHeight
-        headerHeight.current = currentHeaderHeight
-        console.log(headerHeight.current)
-    }, [])
+        // get info height
+        const infoHeight = infoRef.current.offsetHeight
+        // get window height
+        const windowHeight = window.innerHeight
+
+        aboutUsStyle.current = (infoHeight > windowHeight) ? "inline" : "fixed" 
+    },[])
 
     
     return (
         <div
         className={"flex flex-col w-full"}
         >
-            <Info />
+            <Info 
+                infoRef={infoRef}
+            />
             
             <BrickWall 
             parent={"about_us"}
+            style={aboutUsStyle.current}
             />
             
         </div>
