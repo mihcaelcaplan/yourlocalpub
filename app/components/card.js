@@ -12,17 +12,18 @@ export default function Card({publication_key}) {
 
     useEffect(() => {
         function updateTitle() {
-          const height = titleRef.current.offsetHeight
-          const lineHeight = +getComputedStyle(titleRef.current).lineHeight.slice(0,2)
-          console.log(height, lineHeight)
-          if(height> 3*lineHeight){
+          // const height = titleRef.current.offsetHeight
+          // const lineHeight = +getComputedStyle(titleRef.current).lineHeight.slice(0,2)
+          const textHeight = titleRef.current.getBoundingClientRect().height
+          if(textHeight> 20.5){
+            // console.log("i'm wrapping..")
             // titleRef.current.style["font-size"] = "1rem"
-            // titleRef.current.style["line-height"] = "1.25rem"
+            titleRef.current.style["line-height"] = "1.25rem"
             // titleRef.current.style["letter-spacing"] = "-0.05em"
           }
           else{
             // titleRef.current.style["font-size"] = "1rem"
-            // titleRef.current.style["line-height"] = "2rem"
+            titleRef.current.style["line-height"] = "2.25rem"
 
 
           }
@@ -56,9 +57,9 @@ export default function Card({publication_key}) {
             </div>
                 <div className='flex flex-row text-lg active:bg-gray-200 border-black border-b-2 border-l-2 border-r-2'>
                     <div
-                    ref={titleRef}
+                    // ref={titleRef}
                     className='p-3 leading-5 h-[60px]'
-                    >{publication.title}</div>
+                    > <span ref={titleRef}>{publication.title}</span></div>
                     <div
                     className='ml-auto border-l-2 border-black p-3'
                     >{publication.price}</div>
