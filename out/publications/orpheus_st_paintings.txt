@@ -1,7 +1,7 @@
 1:HL["/_next/static/media/935cd3e4028ff59e.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/f8665ebe031a4a9f.css",{"as":"style"}]
-0:["r3u4oy9M1b0fMcE31GS_B",[[["",{"children":["publications",{"children":["orpheus_st_paintings",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f8665ebe031a4a9f.css","precedence":"next"}]],"$L4"]]]]
-5:I{"id":4716,"chunks":["986:static/chunks/986-731ca1843d9b27b8.js","185:static/chunks/app/layout-4c64659075ba77cf.js"],"name":"","async":false}
+0:["_HuUBWV8XvR0Azh3gTU5G",[[["",{"children":["publications",{"children":["orpheus_st_paintings",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f8665ebe031a4a9f.css","precedence":"next"}]],"$L4"]]]]
+5:I{"id":4716,"chunks":["986:static/chunks/986-731ca1843d9b27b8.js","185:static/chunks/app/layout-4035e847204998fd.js"],"name":"","async":false}
 6:I{"id":7767,"chunks":["272:static/chunks/webpack-68e460f910c08744.js","971:static/chunks/fd9d1056-8c7d7606ff240247.js","596:static/chunks/596-62f2385d4216c47b.js"],"name":"default","async":false}
 7:I{"id":7920,"chunks":["272:static/chunks/webpack-68e460f910c08744.js","971:static/chunks/fd9d1056-8c7d7606ff240247.js","596:static/chunks/596-62f2385d4216c47b.js"],"name":"default","async":false}
 9:I{"id":3543,"chunks":["986:static/chunks/986-731ca1843d9b27b8.js","91:static/chunks/91-8e1201a5a63c110f.js","831:static/chunks/app/publications/orpheus_st_paintings/page-e29e6bc7fde2bccc.js"],"name":"","async":false}
