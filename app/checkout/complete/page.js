@@ -32,13 +32,13 @@ export default function CheckoutComplete(){
 
     return(
         <div
-        className="flex flex-col pt-4 pl-6 pr-4 font-bold"
+        className="flex flex-col pt-4 pl-6 pr-4 font-semibold"
         >
             <span> Thank you for your support!</span>
             <div className="bg-white border border-2 border-black p-2">
                <span> Order Reference: {checkoutId.current}</span>
                <br />
-               <span className="font-bold"> Confirmation email sent!</span>
+               <span className="font-semibold"> Confirmation email sent!</span>
             </div>
             <div className="pt-4">
                 Your order: 

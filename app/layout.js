@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         <main className="flex flex-row h-full" >
         <CartContext.Provider value={[cart, setCart]}>
             {/* main screen */}
-            <div className="bg-pubmain">
+            <div className="bg-pubmain lg:flex-1">
                 <Header />
                 {children}
           </div>        
