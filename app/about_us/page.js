@@ -1,21 +1,24 @@
 'use client'
 import Info from "../components/info";
 import { BrickWall } from "../components/about_wall";
-import { useRef, useEffect} from "react";
+import { useRef, useEffect, useState} from "react";
 
 
 export default function Home(){
     
     const infoRef = useRef();
-    const aboutUsStyle = useRef()
+    const [aboutUsStyle, setAboutUsStyle] = useState("fixed")
 
     useEffect(()=>{
         // get info height
         const infoHeight = infoRef.current.offsetHeight
         // get window height
         const windowHeight = window.innerHeight
-
-        aboutUsStyle.current = (infoHeight > windowHeight) ? "inline" : "fixed" 
+        const calcAboutUsStyle = (infoHeight + 240 > windowHeight) ? "inline" : "fixed" 
+        console.log(calcAboutUsStyle)
+        setAboutUsStyle(calcAboutUsStyle);
+        
+        // console.log(aboutUsStyle)
     },[])
 
     
@@ -29,7 +32,7 @@ export default function Home(){
             
             <BrickWall 
             parent={"about_us"}
-            style={aboutUsStyle.current}
+            style={aboutUsStyle}
             />
             
         </div>

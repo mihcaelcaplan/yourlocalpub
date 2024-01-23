@@ -4,7 +4,6 @@ import {Brick, Spacer} from "@/app/components/brick.js"
 export const BrickWall = ({parent, style})=>{
 
     let brickHeight;
-    let displayStyle = "fixed"
     
     switch(parent){
         case "sidepane":
@@ -12,12 +11,13 @@ export const BrickWall = ({parent, style})=>{
             break;
         case "about_us":
             brickHeight =  "h-[40px]"
-            displayStyle = style
             break;
         default:
             brickHeight =  "h-[40px]"
             break;
     }
+
+    const displayStyle = style == "fixed" ? "fixed" : "inline";
 
     return (
         <div
