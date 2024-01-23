@@ -31,7 +31,7 @@ export default function ItemDescription({publication, publication_key}){
 
 
     return(
-        <div className="grid grid-cols-1 mr-2 ml-2 sm:ml-4 sm:mr-4 font-semibold leading-5">
+        <div className="grid grid-cols-1 mr-2 ml-2 sm:ml-4 sm:mr-4 font-medium leading-5">
                 <b>{publication.title}</b>
                 
                 <ul>
