@@ -98,7 +98,7 @@ export default function InfoGallery({publication, image_paths}){
                     priority={true}
                     src={activeImage}
                     alt={`${publication.title} cover`}
-                    quality={90}
+                    quality={75}
                     // sizes="100vw"
                     // fill
                     height={100}
@@ -126,8 +126,9 @@ export default function InfoGallery({publication, image_paths}){
                 alt={`$(publication.title) cover image`}
                 width={100}
                 height={100}
-                quality={25}
+                quality={1}
                 sizes="100vw"
+                loading="lazy"
                 style={{
                     width: 'auto',
                     height: '100%',

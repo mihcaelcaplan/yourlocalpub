@@ -11,20 +11,40 @@ export default function Home(){
 
     useEffect(()=>{
         // get info height
-        const infoHeight = infoRef.current.offsetHeight
-        // get window height
-        const windowHeight = window.innerHeight
-        const calcAboutUsStyle = (infoHeight + 240 > windowHeight) ? "inline" : "fixed" 
-        console.log(calcAboutUsStyle)
-        setAboutUsStyle(calcAboutUsStyle);
+        function setBricks(){
+            const infoHeight = infoRef.current.offsetHeight;
+            const infoBottom = infoRef.current.getBoundingClientRect().bottom;
+            // get window height
+            const windowHeight = window.innerHeight;
+            const calcAboutUsStyle = (infoBottom + 240 > windowHeight) ? "inline" : "fixed" ;
+            console.log(calcAboutUsStyle);
+            setAboutUsStyle(calcAboutUsStyle);
+        }
+
+        function divert(){
+            const pageWidth = window.innerWidth;
+            if(pageWidth > 1024){
+                location.href="/"
+            }
+
+        }
+
         
-        // console.log(aboutUsStyle)
+        window.addEventListener('resize', setBricks);
+        window.addEventListener('resize', divert);
+        setBricks();
+
+        return () => {
+            window.removeEventListener('resize', setBricks);
+            window.removeEventListener('resize', divert);
+        }
+
     },[])
 
     
     return (
         <div
-        className={"flex flex-col w-full"}
+        className={"flex flex-col w-full inline lg:hidden"}
         >
             <Info 
                 infoRef={infoRef}

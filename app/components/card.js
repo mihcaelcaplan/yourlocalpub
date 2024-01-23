@@ -46,7 +46,7 @@ export default function Card({publication_key}) {
                     // fill
                     height={80}
                     width={80}
-                    quality={30}
+                    quality={1}
                     sizes="100vw"
                     style={{
                         // objectFit:"contain"

@@ -64,7 +64,7 @@ export default function CheckoutButton({cart}){
     return(
         <div>
             <div
-            className="bg-indigo-700 hover:bg-indigo-400 border-black border-2 text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
+            className="bg-pubbrickblue hover:bg-indigo-400 border-black border-2 text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-md "
             > 
                 <div
                 href="/checkout"

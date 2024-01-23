@@ -155,7 +155,7 @@ function Remove({setQuantity, item_key}){
 
     return(
         <div
-        className="flex flex-col col-span-2 border-2 border-black bg-white w-full h-full"
+        className="flex flex-col col-span-2 border-2 border-black bg-pubbrickblue w-full h-full"
         >   
 
             <div className="flex flex-row bg-gray-200 border-b-2 border-black">
@@ -167,7 +167,7 @@ function Remove({setQuantity, item_key}){
             </div>
 
             <div
-            className="flex flex-col text-white justify-center text-center bg-pubblue hover:bg-pubred h-1/2 mt-auto mb-auto ml-2 mr-2"
+            className="flex flex-col text-white justify-center text-center h-1/2 mt-auto mb-auto ml-2 mr-2"
             onClick={()=>{
                 const updateCart = cart;
                 delete updateCart[item_key];
