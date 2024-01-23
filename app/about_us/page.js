@@ -23,16 +23,17 @@ export default function Home(){
 
         function divert(){
             const pageWidth = window.innerWidth;
-            if(pageWidth > 1024){
+            console.log("diverting", pageWidth)
+            if(pageWidth >= 1024){
                 location.href="/"
             }
-
         }
 
         
         window.addEventListener('resize', setBricks);
         window.addEventListener('resize', divert);
-        setBricks();
+        
+        // setBricks();
 
         return () => {
             window.removeEventListener('resize', setBricks);
