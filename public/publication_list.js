@@ -22,11 +22,11 @@ export default {
         title: "Orpheus Street Paintings",
         publicationYear: 2023,
         detail:"Hardcover",
-        stockQuantity: 15,
+        stockQuantity: 150,
         info: "Orpheus Street Paintings is a 57 paged hardback book that collates the work of Nelson Diplexcito. The book introduces you to the artists studio setting and then showcases his body of work ranging from large scale oil on canvas to smaller oil on paper pieces. The book also contains an interview conducted by Jungwon Jay Hur about Diplexcitos practice.",
         images_location:"/orpheus_st_paintings",
         variants:[],
-        price: 35.00
+        price: 30.00
     },
     below_bunyan:{
         id:2,
@@ -54,7 +54,7 @@ export default {
         info: "Mildly High on The Babe Rainbow combines London concert photography with selected lyrics to transport the reader into the audience at the venue. Each copy features a hand typewritten cover making every edition unique. The publication also comes with a black & white darkroom handprint from The Mild High Club at Moth Club.",
         images_location:"/babe_rainbow",
         variants: [],
-        price: 50.00
+        price: 15.00
     },
     
 }

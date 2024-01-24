@@ -85,7 +85,8 @@ export default function CartItem({cart, item_key, checkout}){
                 {!checkout && <QuantityPicker
                     item_key={item_key}
                     quantity={quantity}
-                    setQuantity={setQuantity}  
+                    setQuantity={setQuantity} 
+                    availableQuantity={inventory.availableQuantity} 
                 />}
                 
             </div>}
@@ -99,7 +100,7 @@ export default function CartItem({cart, item_key, checkout}){
     )
 }
 
-function QuantityPicker({item_key, quantity, setQuantity}){
+function QuantityPicker({item_key, quantity, setQuantity, availableQuantity}){
     
     // set up state
     const [cart, setCart] = useContext(CartContext)
@@ -123,25 +124,39 @@ function QuantityPicker({item_key, quantity, setQuantity}){
                 -
             </div>
                 <div
-                className="">
-                    <input
+                className="text-center w-6">
+                {quantity}
+                    {/* <input
                         className="text-center w-6"
                         onChange={e =>{
                             // logic to check that the input value is a number
                             if (!isNaN(e.target.value)) {
-                            setQuantity(Number(e.target.value))
+                                const newQuantity = Number(e.target.value)
+                                if(newQuantity <= availableQuantity){
+                                    setQuantity(newQuantity)
+                                    }
+                                else{
+                                    alert(`Sorry, only ${quantity} left!`)
+                                    setQuantity(quantity)
+                                }
                             }
                             else{
-                            setQuantity(quantity)
+                                setQuantity(quantity)
                             }
                         }}
                             value={quantity}
-                    />
+                    /> */}
             </div>
             <div 
             className=" bg-rose-200 hover:bg-pubred p-1 w-[1.5rem]"
             onClick={()=>{
-                setQuantity(Number(quantity)+1)
+                const newQuantity = Number(quantity)+1
+                if(newQuantity <= availableQuantity){
+                    setQuantity(newQuantity)
+                }
+                else{
+                    alert(`Sorry, only ${quantity} left!`)
+                }
             }}
             >
                 +

@@ -24,7 +24,6 @@ export default function ItemDescription({publication, publication_key}){
                     soldOut: soldOut,
                     lockedInventory: lockedInventory
                 };
-                
                 setInventory(updateInventory);
             });    
     }, [])
@@ -48,7 +47,7 @@ export default function ItemDescription({publication, publication_key}){
                 <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col md:">
                            {!inventory.soldOut && <div>
-                                {`(${inventory.lockedInventory}/${publication.stockQuantity})`}
+                                {`(${inventory.lockedInventory + 1}/${publication.stockQuantity})`}
                             </div>}
                            
                            {inventory.soldOut && <a

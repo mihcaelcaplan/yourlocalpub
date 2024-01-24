@@ -51,7 +51,7 @@ export default function CheckoutComplete(){
             />
 
             <div className="pt-4">
-                Total Price: {checkoutPrice.current} 
+                Total Price: £{checkoutPrice.current} 
             </div>
 
             
