@@ -119,12 +119,12 @@ export default function InfoGallery({publication, image_paths}){
             >
                 {allImages.map(bookImage=>(
                         <Image 
-                        key={bookImage.small}
+                        key={bookImage.large}
                         className = {`pr-2 ${bookImage.large === activeImage  ? "opacity-100" : 'opacity-50'}`}
                         onClick={()=> setActiveImage(bookImage)}
-                        src={bookImage.small}
-                        // placeholder="blur"
-                        // blurDataURL={bookImage.small}
+                        src={bookImage.large}
+                        placeholder="blur"
+                        blurDataURL={bookImage.small}
                         alt={`$(publication.title) cover image`}
                         width={100}
                         height={75}
