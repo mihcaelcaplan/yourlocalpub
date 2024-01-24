@@ -130,7 +130,8 @@ export default function InfoGallery({publication, image_paths}){
                         height={75}
                         quality={1}
                         sizes="75vw"
-                        loading="lazy"
+                        priority={true}
+                        // loading="lazy"
                         // fill
                         style={{
                             height: '100%',
