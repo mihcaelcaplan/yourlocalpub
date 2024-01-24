@@ -2,7 +2,7 @@ export default {
     castle_bts: {
         id: 4,
         status:"active",
-        coverImage: "/castle_by_the_sea/CBTS_Grey_Front.jpg",
+        coverImage: "/castle_by_the_sea/Small_CBTS_Grey_00.jpg",
         route: "/publications/castle_by_the_sea",
         title: "Castle By the Sea", 
         publicationYear: 2024,
@@ -17,7 +17,7 @@ export default {
     orpheus_st: {
         id:1,
         status: "active",
-        coverImage: "/orpheus_st_paintings/ND_3070_Cover.jpg",
+        coverImage: "/orpheus_st_paintings/Small_ND_3070.jpg",
         route: "/publications/orpheus_st_paintings",
         title: "Orpheus Street Paintings",
         publicationYear: 2023,
@@ -31,7 +31,7 @@ export default {
     below_bunyan:{
         id:2,
         status:"active",
-        coverImage: "/below_bunyan/BelowBunyan_Grey_01.jpg",
+        coverImage: "/below_bunyan/Small_BelowBunyan_Grey_01.jpg",
         route: "/publications/below_bunyan",
         title: "Below Bunyan",
         publicationYear: 2021,
@@ -45,7 +45,7 @@ export default {
     babe_rainbow: {
         id: 3,
         status:"active",
-        coverImage: "/babe_rainbow/MHC_Zine_Grey_01.jpg",
+        coverImage: "/babe_rainbow/Small_MHC_Zine_Grey_01.jpg",
         route: "/publications/babe_rainbow",
         title: "Mildly High on the Babe Rainbow", 
         publicationYear: 2023,
