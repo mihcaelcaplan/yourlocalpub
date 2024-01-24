@@ -8,17 +8,17 @@ export default function InfoGallery({publication, image_paths}){
     
     const [fullScreen, setFullscreen] = useState(false)
     const allImages = image_paths
-    const [activeImage, setActiveImage] = useState(allImages[0].large)
+    const [activeImage, setActiveImage] = useState(allImages[0])
 
     // swipe handle function
     const handleSwipe = (dir)=>{
         if(dir == "Left"){
-            const nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage) + 1) % allImages.length
-            setActiveImage(allImages[nextImgIndex].large)
+            const nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage.large) + 1) % allImages.length
+            setActiveImage(allImages[nextImgIndex])
         }
         else if(dir == "Right"){
-            const nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
-            setActiveImage(allImages[nextImgIndex].large)
+            const nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage.large) - 1) % allImages.length)+ allImages.length) % allImages.length
+            setActiveImage(allImages[nextImgIndex])
         }
     }
 
@@ -32,13 +32,13 @@ export default function InfoGallery({publication, image_paths}){
                 break;
             
                 case "ArrowRight":
-                    nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage) + 1) % allImages.length
-                    setActiveImage(allImages[nextImgIndex].large)
+                    nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage.large) + 1) % allImages.length
+                    setActiveImage(allImages[nextImgIndex])
                 break;
                 
                 case "ArrowLeft":
-                    nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
-                    setActiveImage(allImages[nextImgIndex].large)
+                    nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage.large) - 1) % allImages.length)+ allImages.length) % allImages.length
+                    setActiveImage(allImages[nextImgIndex])
                 break;
         
             default:
@@ -72,12 +72,12 @@ export default function InfoGallery({publication, image_paths}){
             setFullscreen(false)
         }
         else if(e.target.id == "forward"){
-            const nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage) + 1) % allImages.length
-            setActiveImage(allImages[nextImgIndex].large)
+            const nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage.large) + 1) % allImages.length
+            setActiveImage(allImages[nextImgIndex])
         }
         else if(e.target.id == "back"){
-            const nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
-            setActiveImage(allImages[nextImgIndex].large)
+            const nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage.large) - 1) % allImages.length)+ allImages.length) % allImages.length
+            setActiveImage(allImages[nextImgIndex])
         }
     }
 
@@ -95,10 +95,10 @@ export default function InfoGallery({publication, image_paths}){
                     onClick={()=>setFullscreen(true)}
                     className={fullScreen ? "z-30" : "" }
                     priority={true}
-                    src={activeImage}
-                    alt={`Photo of book: filename ${activeImage}`}
+                    src={activeImage.large}
+                    alt={`Photo of book: filename ${activeImage.large}`}
                     placeholder="blur"
-                    blurDataURL={activeImage}
+                    blurDataURL={activeImage.small}
                     quality={75}
                     height={75}
                     width={100}
@@ -121,7 +121,7 @@ export default function InfoGallery({publication, image_paths}){
                         <Image 
                         key={bookImage.small}
                         className = {`pr-2 ${bookImage.large === activeImage  ? "opacity-100" : 'opacity-50'}`}
-                        onClick={()=> setActiveImage(bookImage.large)}
+                        onClick={()=> setActiveImage(bookImage)}
                         src={bookImage.small}
                         // placeholder="blur"
                         // blurDataURL={bookImage.small}
