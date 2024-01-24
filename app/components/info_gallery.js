@@ -7,19 +7,18 @@ import { useSwipeable } from "react-swipeable"
 export default function InfoGallery({publication, image_paths}){
     
     const [fullScreen, setFullscreen] = useState(false)
-    const [activeImage, setActiveImage] = useState(publication.coverImage)
     const allImages = image_paths
-    const inactiveImages = image_paths.filter(element => element != activeImage)
+    const [activeImage, setActiveImage] = useState(allImages[0].large)
 
     // swipe handle function
     const handleSwipe = (dir)=>{
         if(dir == "Left"){
-            const nextImgIndex = (allImages.indexOf(activeImage) + 1) % allImages.length
-            setActiveImage(allImages[nextImgIndex])
+            const nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage) + 1) % allImages.length
+            setActiveImage(allImages[nextImgIndex].large)
         }
         else if(dir == "Right"){
-            const nextImgIndex = (((allImages.indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
-            setActiveImage(allImages[nextImgIndex])
+            const nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
+            setActiveImage(allImages[nextImgIndex].large)
         }
     }
 
@@ -33,13 +32,13 @@ export default function InfoGallery({publication, image_paths}){
                 break;
             
                 case "ArrowRight":
-                    nextImgIndex = (allImages.indexOf(activeImage) + 1) % allImages.length
-                    setActiveImage(allImages[nextImgIndex])
+                    nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage) + 1) % allImages.length
+                    setActiveImage(allImages[nextImgIndex].large)
                 break;
                 
                 case "ArrowLeft":
-                    nextImgIndex = (((allImages.indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
-                    setActiveImage(allImages[nextImgIndex])
+                    nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
+                    setActiveImage(allImages[nextImgIndex].large)
                 break;
         
             default:
@@ -73,12 +72,12 @@ export default function InfoGallery({publication, image_paths}){
             setFullscreen(false)
         }
         else if(e.target.id == "forward"){
-            const nextImgIndex = (allImages.indexOf(activeImage) + 1) % allImages.length
-            setActiveImage(allImages[nextImgIndex])
+            const nextImgIndex = (allImages.map(i=>i.large).indexOf(activeImage) + 1) % allImages.length
+            setActiveImage(allImages[nextImgIndex].large)
         }
         else if(e.target.id == "back"){
-            const nextImgIndex = (((allImages.indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
-            setActiveImage(allImages[nextImgIndex])
+            const nextImgIndex = (((allImages.map(i=>i.large).indexOf(activeImage) - 1) % allImages.length)+ allImages.length) % allImages.length
+            setActiveImage(allImages[nextImgIndex].large)
         }
     }
 
@@ -97,10 +96,10 @@ export default function InfoGallery({publication, image_paths}){
                     className={fullScreen ? "z-30" : "" }
                     priority={true}
                     src={activeImage}
-                    alt={`${publication.title} cover`}
+                    alt={`Photo of book: filename ${activeImage}`}
+                    placeholder="blur"
+                    blurDataURL={activeImage}
                     quality={75}
-                    // sizes="100vw"
-                    // fill
                     height={75}
                     width={100}
                     sizes="100vw"
@@ -116,25 +115,30 @@ export default function InfoGallery({publication, image_paths}){
           
             <div
             className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start overflow-hidden"
+            // className="grid grid-flow-row  gap-0 overflow-scroll w-full justify-start overflow-hidden"
             >
-            {allImages.map(bookImage=>(
-                <Image 
-                key={bookImage}
-                className = {bookImage === activeImage  ? "pr-2 opacity-100" : 'pr-2 opacity-50'}
-                onClick={()=> setActiveImage(bookImage)}
-                src={bookImage}
-                alt={`$(publication.title) cover image`}
-                width={100}
-                height={75}
-                quality={1}
-                sizes="100vw"
-                loading="lazy"
-                style={{
-                    width: 'auto',
-                    height: '100%',
-                }}
-                />
-            ))}
+                {allImages.map(bookImage=>(
+                        <Image 
+                        key={bookImage.small}
+                        className = {`pr-2 ${bookImage.large === activeImage  ? "opacity-100" : 'opacity-50'}`}
+                        onClick={()=> setActiveImage(bookImage.large)}
+                        src={bookImage.small}
+                        // placeholder="blur"
+                        // blurDataURL={bookImage.small}
+                        alt={`$(publication.title) cover image`}
+                        width={100}
+                        height={75}
+                        quality={1}
+                        sizes="75vw"
+                        loading="lazy"
+                        // fill
+                        style={{
+                            height: '100%',
+                            width: '100%',
+                            // objectFit: 'contain'
+                        }}
+                        />
+                ))}
             </div>
             
             {fullScreen && <div 

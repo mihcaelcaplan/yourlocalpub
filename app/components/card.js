@@ -48,6 +48,8 @@ export default function Card({publication_key}) {
                     width={100}
                     quality={50}
                     sizes="100vw"
+                    placeholder='blur'
+                    blurDataURL={publication.coverImage}
                     style={{
                         // objectFit:"contain"
                         width: '100%',
