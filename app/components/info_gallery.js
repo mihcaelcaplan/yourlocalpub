@@ -114,12 +114,12 @@ export default function InfoGallery({publication, image_paths}){
                 
           
             <div
-            className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start overflow-hidden"
+            className="flex flex-row flex-initial overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start overflow-hidden"
             >
                 {allImages.map(bookImage=>(
                         <Image 
-                        key={bookImage.large}
-                        className = {`pr-2 ${bookImage.large === activeImage.large  ? "opacity-100" : 'opacity-50'}`}
+                        key={bookImage.small}
+                        className = {`pr-2 min-w-[100px] ${bookImage.large === activeImage.large  ? "opacity-100" : 'opacity-50'}`}
                         onClick={()=> setActiveImage(bookImage)}
                         src={bookImage.large}
                         placeholder="blur"
@@ -129,12 +129,12 @@ export default function InfoGallery({publication, image_paths}){
                         height={75}
                         quality={1}
                         sizes="100vw"
-                        priority={true}
-                        // loading="lazy"
+                        // priority={true}
+                        loading="lazy"
                         // fill
                         style={{
-                            height: '100%',
                             width: '100%',
+                            height: 'auto',
                             // objectFit: 'contain'
                         }}
                         />
