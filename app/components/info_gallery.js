@@ -120,7 +120,7 @@ export default function InfoGallery({publication, image_paths}){
                 {allImages.map(bookImage=>(
                         <Image 
                         key={bookImage.large}
-                        className = {`pr-2 ${bookImage.large === activeImage  ? "opacity-100" : 'opacity-50'}`}
+                        className = {`pr-2 ${bookImage.large === activeImage.large  ? "opacity-100" : 'opacity-50'}`}
                         onClick={()=> setActiveImage(bookImage)}
                         src={bookImage.large}
                         placeholder="blur"
