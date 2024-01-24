@@ -2,7 +2,7 @@ export default function Info({infoRef}){
     return(
         <div 
         ref={infoRef}
-        className=' flex-1 pl-12 pr-12 pt-4 font-medium text-lg leading-5 pb-4 lg:pb-[260px] overflow-scroll'>
+        className=' flex-1 pl-12 pr-12 lg:pt-1 xl:pt-4 font-medium text-lg leading-5 pb-4 lg:pb-[260px] overflow-scroll'>
 
         Your Local Pub is a independent small press created by Brad Gilbert and Michael Caplan. We want to be a resource for small artists and designers who don’t always have good options to start publishing collections of their work. We aim to release a new artists work monthly.         <br />
         <br />
@@ -27,17 +27,17 @@ export default function Info({infoRef}){
         </ul>
         
         <br />
-        If you would like to propose a project concept please get in touch via our instagram account.
+        If you would like to propose a project, please get in touch!
         <br />
         <br />
-        Social Media: 
-        <br />
-        <a
+        {/* Social Media:  */}
+        {/* <br /> */}
+        {/* <a
         href="https://www.instagram.com/yourlocalpublication"
         className="hover:text-slate-600"
         >
         @yourlocalpublication
-        </a>
+        </a> */}
         </div>
     )
 }

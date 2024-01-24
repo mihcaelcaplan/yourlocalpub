@@ -18,8 +18,8 @@ export default function GoToCart({publication_key, isHidden, setHidden}){
                     <BrickWall />
                 </div>
                 
-                <div className="absolute top-1/3 -translate-y-1/2 left-1/2 -translate-x-1/2 w-3/4">
-                    <div className="text-center m-auto p-4 lg:p-6 text-sm lg:text-2xl lg:leading-8 bg-white border-2 border-black w-auto">
+                <div className="absolute top-1/3 -translate-y-1/2 left-1/2 -translate-x-1/2 w-5/6 md:w-3/4">
+                    <div className="text-center m-auto p-1 md:p-4 lg:p-6 text-sm lg:text-2xl lg:leading-8 bg-white border-2 border-black w-auto">
                         You&apos;re a right good pub-goer.
                         <br/>
                         Well on ya, mate!
