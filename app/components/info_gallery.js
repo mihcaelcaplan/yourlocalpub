@@ -115,7 +115,6 @@ export default function InfoGallery({publication, image_paths}){
           
             <div
             className="flex flex-row overflow-scroll md:h-[5rem] h-[3rem] w-full justify-start overflow-hidden"
-            // className="grid grid-flow-row  gap-0 overflow-scroll w-full justify-start overflow-hidden"
             >
                 {allImages.map(bookImage=>(
                         <Image 
@@ -129,7 +128,7 @@ export default function InfoGallery({publication, image_paths}){
                         width={100}
                         height={75}
                         quality={1}
-                        sizes="75vw"
+                        sizes="100vw"
                         priority={true}
                         // loading="lazy"
                         // fill
