@@ -101,7 +101,7 @@ export default function InfoGallery({publication, image_paths}){
                     quality={75}
                     // sizes="100vw"
                     // fill
-                    height={100}
+                    height={75}
                     width={100}
                     sizes="100vw"
                     style={{
@@ -124,7 +124,7 @@ export default function InfoGallery({publication, image_paths}){
                 onClick={()=> setActiveImage(bookImage)}
                 src={bookImage}
                 alt={`$(publication.title) cover image`}
-                width={100}
+                width={75}
                 height={100}
                 quality={1}
                 sizes="100vw"
