@@ -124,8 +124,8 @@ export default function InfoGallery({publication, image_paths}){
                 onClick={()=> setActiveImage(bookImage)}
                 src={bookImage}
                 alt={`$(publication.title) cover image`}
-                width={75}
-                height={100}
+                width={100}
+                height={75}
                 quality={1}
                 sizes="100vw"
                 loading="lazy"
