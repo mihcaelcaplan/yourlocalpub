@@ -19,31 +19,33 @@ export default function CartItem({cart, item_key, checkout}){
 
     const publication = publications[item_key];
 
-    // each item should know it's own inventory when it loads
-     // get inventory on load
-     const [inventory, setInventory] = useState({
-        soldOut: false,
-        availableQuantity: 0
-    })
-    
-    useEffect(()=>{
-            console.log("updating inv.")
-            // go update the inventory    
-            
-            const response = getInventory(item_key).then((response)=>{
-                const soldOut = response.lockedInventory < publication.stockQuantity ? false : true;
-                const availableQuantity = response.lockedInventory;
-                
-                const updateInventory = {
-                    soldOut: soldOut,
-                    availableQuantity: publication.stockQuantity - response.lockedInventory,
-                };
+        const [inventory, setInventory] = useState({
+            soldOut: false,
+            availableQuantity: 0
+        })
+        
+        // get inventory on load 
+        //  unless you're in checkout, in which case don't check!!! because locks right before checkout step so it would prompt to remove
+        if (checkout != true){
+            useEffect(()=>{
+                    console.log("updating inv.")
+                    // go update the inventory    
+                    
+                    const response = getInventory(item_key).then((response)=>{
+                        const soldOut = response.lockedInventory < publication.stockQuantity ? false : true;
+                        const availableQuantity = response.lockedInventory;
+                        
+                        const updateInventory = {
+                            soldOut: soldOut,
+                            availableQuantity: publication.stockQuantity - response.lockedInventory,
+                        };
 
-                console.log("inventory", updateInventory);
-                
-                setInventory(updateInventory);
-            });    
-    }, [])
+                        console.log("inventory", updateInventory);
+                        
+                        setInventory(updateInventory);
+                    });    
+            }, [])
+        }
 
 
     return(
