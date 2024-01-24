@@ -114,10 +114,9 @@ export default function InfoGallery({publication, image_paths}){
                 
           
             <div
-            className="flex flex-row flex-grow overflow-scroll w-full justify-start"
+            className="flex flex-row md:h-[5rem] h-[3rem] overflow-scroll w-full justify-start overflow-hidden"
             >
                 {allImages.map(bookImage=>(
-                    <div className="min-w-[10rem] md:min-w-[8rem] lg:">
                         <Image 
                         key={bookImage.small}
                         className = {`pr-2 ${bookImage.large === activeImage.large  ? "opacity-100" : 'opacity-50'}`}
@@ -134,12 +133,11 @@ export default function InfoGallery({publication, image_paths}){
                         loading="lazy"
                         // fill
                         style={{
-                            width: '100%',
-                            height: 'auto',
-                            objectFit: 'contain'
+                            width: 'auto',
+                            height: '100%',
+                            // objectFit: 'contain'
                         }}
                         />
-                    </div>
                 ))}
             </div>
             
