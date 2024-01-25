@@ -52,7 +52,7 @@ export default function ItemDescription({publication, publication_key}){
                            
                            {inventory.soldOut && <a
                            className=" underline hover:text-pubblue"
-                           href={`mailto:support@yourlocalpublication.com?subject=Print more copies of ${publication.title}&body=I want to buy one 😀`}
+                           href={`mailto:contact@yourlocalpublication.com?subject=Print more copies of ${publication.title}&body=I want to buy one 😀`}
                            >
                                 Print More!
                             </a>}
