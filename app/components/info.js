@@ -22,7 +22,6 @@ export default function Info({infoRef}){
         <li>Mataio Austin Dean</li>
         <li>Kay Liang</li>
         <li>Ula Taylor Reilly</li>
-        <li>Kay Liang</li>
         <li>Michelle Lim</li>
         </ul>
         

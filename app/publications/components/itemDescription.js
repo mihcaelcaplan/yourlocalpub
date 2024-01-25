@@ -54,7 +54,7 @@ export default function ItemDescription({publication, publication_key}){
                            className=" underline hover:text-pubblue"
                            href={`mailto:support@yourlocalpublication.com?subject=Print more copies of ${publication.title}&body=I want to buy one 😀`}
                            >
-                                Print more!
+                                Print More!
                             </a>}
                             <div className="font-semibold">{"£"+publication.price}</div>
                     </div>
@@ -63,7 +63,7 @@ export default function ItemDescription({publication, publication_key}){
                     {inventory.soldOut && 
                     <div
                     className="h-6 w-auto p-4 bg-pubbrickblue font-semibold text-white border-black border-2 text-center align-middle leading-[0rem] text-[0.75rem]  sm:text-[1rem]  md:text-[1.25rem] whitespace-nowrap"
-                    > Sold out!</div>}
+                    > SOLD OUT</div>}
 
                     {!inventory.soldOut && 
                     <AddToCart

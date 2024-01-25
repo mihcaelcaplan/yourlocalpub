@@ -63,7 +63,7 @@ export const BrickWall = ({parent, style})=>{
                     className="text-l self-center font-semibold"
                     href="mailto:contact@yourlocalpublication.com"
                     >
-                        Contact
+                        CONTACT
                     </a>
                 </div>
                 <Brick borderT={false} borderB={false} borderR={false} borderL={true}/>
@@ -78,7 +78,7 @@ export const BrickWall = ({parent, style})=>{
                     className="text-l self-center font-semibold"
                     href="https://www.instagram.com/yourlocalpublication"
                     >
-                        Instagram
+                        INSTAGRAM
                     </a>
                 </div>
                 <Brick borderT={true} borderB={true} borderR={false} borderL={true}/>
