@@ -97,7 +97,7 @@ export default function InfoGallery({publication, image_paths}){
                     priority={true}
                     src={activeImage.large}
                     alt={`Photo of book: filename ${activeImage.large}`}
-                    placeholder="blur"
+                    placeholder={`data:${activeImage.small}`}
                     blurDataURL={activeImage.small}
                     quality={75}
                     height={75}
@@ -121,9 +121,9 @@ export default function InfoGallery({publication, image_paths}){
                         key={bookImage.small}
                         className = {`pr-2 ${bookImage.large === activeImage.large  ? "opacity-100" : 'opacity-50'}`}
                         onClick={()=> setActiveImage(bookImage)}
-                        src={bookImage.large}
-                        placeholder="blur"
-                        blurDataURL={bookImage.small}
+                        src={bookImage.small}
+                        placeholder={`data:${bookImage.small}`}
+                        // blurDataURL={bookImage.small}
                         alt={`$(publication.title) cover image`}
                         width={100}
                         height={75}
