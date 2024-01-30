@@ -16,7 +16,8 @@ export default function ShippingItem({price}){
 
             <div className="flex flex-col justify-center pl-2">
                 {/* <p className=" text-sm text-stone-700 pb-2">Price</p> */}
-                <p>£{price}</p>
+                {price > 0 && <p>£{price}</p>}
+                {price == 0 && <p>FREE</p>}
             </div>
         </div>
     )

@@ -10,6 +10,7 @@ export default function CheckoutButton({cart}){
 
         Object.keys(enrichedCart.products).map(cart_item => {
             enrichedCart.products[cart_item].price = publications[cart_item].price
+            enrichedCart.products[cart_item].shipping = publications[cart_item].shipping
         });
 
         // store checkout timestamp
