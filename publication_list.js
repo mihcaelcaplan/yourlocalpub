@@ -7,14 +7,14 @@ export default {
         title: "Book of Eyes", 
         publicationYear: 2024,
         detail:"Softcover",
-        stockQuantity: 30,
+        stockQuantity: 50,
         // info: 'A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”',
         info: <div><p>The Book of Eyes contains 23 images of the human eye, photographed in the UK during 2021-2024.</p><br />
         <p>The impetus (perhaps subconscious) of the project comes from Boris Groys who, in Philosophy of Care, argues that the human body is worthy of the same reverence as art-objects.</p><br/>
         <p>"The human gaze does not see the human soul - that was the privilege of god. The human soul sees only the human body. Our rights are related to the image that we offer to the gaze of others… Art does not wait for a better society of the future - it immortalizes here and now… To fulfill its mission, the art museum should include humans. Because the human being is simply a body among other bodies, a thing among other things, humans can also be blessed with the museums immortality."</p></div>,
         images_location:"/book_of_eyes",
         variants: [],
-        price: 15.00,
+        price: 12.00,
         shipping: 0,
     },
     castle_bts: {
