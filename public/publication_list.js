@@ -57,7 +57,14 @@ export default {
         publicationYear: 2021,
         detail:"Hardcover",
         stockQuantity: 30,
-        info: "Below Bunyan is a book that represents the diverse artistic spirit of the next generation, captured through compelling details that reveal the interior world of an oft-overlooked phenomenon.",
+        info: <div><p>Below Bunyan is a 110 paged softcover book that collates images from Christopher Palmers clothing archive. Palmer’s archive consists of collector pieces from Carol Christian Poell, Paul Harnden, Maison Margiela, Takahiro Miyashita, Carpe Diem and more.</p>
+        <br />
+        <p>Initially starting as an Archival project the images were collated and designed into a publication that was stocked at Tender Books in London.</p>
+        <br />
+        <p>The garments were art directed to highlight not just the amazing craftsmanship of the garments but also the unique location of the archive. Located in the basement of the Barbican, dusted over by the mystery of time, unused cars and old storage units.</p>
+        <br />
+        <p>More images can be found on the @belowbunyan instagram page.</p>
+        </div>,
         images_location:"/below_bunyan",
         variants: [],
         price: 15.00,
