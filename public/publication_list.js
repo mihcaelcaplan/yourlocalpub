@@ -1,4 +1,27 @@
 export default {
+    mantra: {
+        id: 5,
+        status:"active",
+        coverImage: "/mantra/JayAnimation_01.jpg",
+        route: "/publications/mantra",
+        title: "Mantra", 
+        publicationYear: 2024,
+        detail:<div>Fold-out Print with Slipcase<br />Lithograph Printing
+        </div>,
+        dimensions: "740mm x 630mm",
+        stockQuantity: 50,
+        // info: 'A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”',
+        info: <div><p>Mantra, by Jungwon Jay Hur, is a folded large scale print showcasing the artists latest series of etchings.</p>
+                    <p>The nature of her art practice centers around storytelling, inspired by folk music and literature (poems, essays, fiction) combined with her personal memories and experiences.</p><br/>
+                    <p>Mantra is a continuation of Jay’s past and ongoing project of ‘folding screen prints’, where she has printed a series of etchings on Hanji paper as well as ‘Bojagi (a Korean traditional wrapping cloth made from a variety of materials). This larger project is currently in a stage of development where she is creating various scales of patchwork quilt prints that allow her to delve into the idea of ‘home’ - through which she has been unfolding the experience of a diaspora female Asian artist in the UK and re-exploring her native Korean culture that she often overlooked in the past, building a new network of cultural and personal connection.</p><br/>
+                    <p>Jay is fascinated by the emergence of an image through the building of time, and the way each etching plate holds its very own process through a chemical reaction, which always seems so magical.</p>
+                    <p>She depicts images that are the mixture of figures and landscape often in small scale etching plates, and as a collective body they create much bigger narratives through her delicate and thoughtful decisions on the configuration of plates.</p>
+                </div>,
+        images_location:"/mantra",
+        variants: [],
+        price: 20.00,
+        shipping: 0,
+    },
     eyes: {
         id: 5,
         status:"active",
@@ -7,6 +30,7 @@ export default {
         title: "Book of Eyes", 
         publicationYear: 2024,
         detail:"Softcover",
+        dimensions: "70mm x 67mm",
         stockQuantity: 50,
         // info: 'A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”',
         info: <div><p>The Book of Eyes contains 23 images of the human eye, photographed in the UK during 2021-2024.</p><br />
@@ -25,6 +49,7 @@ export default {
         title: "Castle By the Sea", 
         publicationYear: 2024,
         detail:"Softcover",
+        dimensions: "160mm x 225mm",
         stockQuantity: 30,
         // info: 'A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”',
         info: <div><p>A Castle by the Sea is a 22-page publication by Brad Gilbert that collates images taken in Ischia, Italy in the summer of 2022. It has been designed to be disassembled allowing you to use images as individual or large-scale prints.</p><br/> <p>“Although the memories might not depict the actual events 100% they still feel like the truth. The image can show something different but it shows the same truth as the memory and it’s nice to have a scene that only appears in your head. Which is what a moment in time really is. Every time I look back on these images it forms that mist of memories and I feel closer to rabbits near the sea.”</p></div>,
@@ -41,6 +66,7 @@ export default {
         title: "Orpheus Street Paintings",
         publicationYear: 2023,
         detail:"Hardcover",
+        dimensions: "240mm x 222mm",
         stockQuantity: 150,
         info: "Orpheus Street Paintings is a 57 paged hardback book that collates the work of Nelson Diplexcito. The book introduces you to the artists studio setting and then showcases his body of work ranging from large scale oil on canvas to smaller oil on paper pieces. The book also contains an interview conducted by Jungwon Jay Hur about Diplexcitos practice.",
         images_location:"/orpheus_st_paintings",
@@ -56,6 +82,7 @@ export default {
         title: "Below Bunyan",
         publicationYear: 2021,
         detail:"Hardcover",
+        dimensions: "148mm x 210mm",
         stockQuantity: 30,
         info: <div><p>Below Bunyan is a 110 paged softcover book that collates images from Christopher Palmers clothing archive. Palmer’s archive consists of collector pieces from Carol Christian Poell, Paul Harnden, Maison Margiela, Takahiro Miyashita, Carpe Diem and more.</p>
         <br />
@@ -78,6 +105,7 @@ export default {
         title: "Mildly High on the Babe Rainbow", 
         publicationYear: 2023,
         detail:"Hardcover",
+        dimensions: "140mm x 185mm",
         stockQuantity: 15,
         info: "Mildly High on The Babe Rainbow combines London concert photography with selected lyrics to transport the reader into the audience at the venue. Each copy features a hand typewritten cover making every edition unique. The publication also comes with a black & white darkroom handprint from The Mild High Club at Moth Club.",
         images_location:"/babe_rainbow",

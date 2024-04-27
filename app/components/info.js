@@ -12,12 +12,12 @@ export default function Info({infoRef}){
         <li>Nelson Diplexcito</li>
         <li>Brad Gilbert</li>
         <li>Gabriel Gayle</li>
+        <li>Jungwon Jay Hur</li>
         </ul>
         <br/>
         
         Upcoming Features:
         <ul>
-        <li>Jungwon Jay Hur</li>
         <li>Michael Caplan</li>
         <li>Mataio Austin Dean</li>
         <li>Kay Liang</li>

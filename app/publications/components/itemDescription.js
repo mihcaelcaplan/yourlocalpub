@@ -40,6 +40,9 @@ export default function ItemDescription({publication, publication_key}){
                     <li
                     className=""
                     >{publication.detail}</li>
+                    <li
+                    className=""
+                    >{publication.dimensions}</li>
                 </ul>
             
                 <div className="mt-2 mb-4 w-inherit ">{publication.info}</div>
