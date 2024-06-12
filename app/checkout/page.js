@@ -1,12 +1,14 @@
 'use client'
 import Script from "next/script";
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { useEffect } from "react";
 import { useContext } from "react";
 import { CartContext } from "../components/cart_context";
 import Basket from "./components/basket";
 import DetailsForm from "./components/details_form";
 import { useForm, SubmitHandler } from "react-hook-form"
+const countryToCurrency = require( 'country-to-currency' );
+
 
 
 export default function Home(){
@@ -24,15 +26,21 @@ export default function Home(){
     var checkoutId = useRef();
     var shippingDetails = useRef();
     var contactDetails = useRef();
-    var shippingPrice = useRef();
-    var checkoutPrice = useRef();
-
+    var [checkoutPrice, setCheckoutPrice] = useState();
+    var [shippingPrice, setShippingPrice] = useState();
+    var [preferredShipping,setPreferredShipping] = useState({destination: 'GB', currency: 'GBP'});
+    
     // get info onload
     useEffect(() => {
-        const checkout = JSON.parse(localStorage.getItem('checkout'))
+        const checkout = JSON.parse(localStorage.getItem('checkout'));
        checkoutId.current = checkout.checkoutId
-       shippingPrice.current = checkout.shippingPrice
-       checkoutPrice.current = checkout.checkoutPrice
+       setShippingPrice(checkout.shippingPrice);
+       setCheckoutPrice(checkout.checkoutPrice);
+
+       const preferredShippingStored = JSON.parse(localStorage.getItem('preferred_shipping'));
+       if(preferredShippingStored != null){
+           setPreferredShipping(preferredShippingStored);
+       } 
 
       }, []);
 
@@ -53,15 +61,111 @@ export default function Home(){
         });
     }
 
+     // handler runs on shipping update (country change)
+     const handleCountryChange= async (selectedCountry) =>{
+
+        const payload = {
+            current_checkout: {
+                checkoutId: checkoutId.current,
+                shippingPrice: shippingPrice,
+                checkoutPrice: checkoutPrice
+            },
+            modify_shipping: {
+                destination: selectedCountry,
+                currency: countryToCurrency[selectedCountry]
+            }
+        }
+
+        let result;
+        let intlShippingStatus = "unchanged";
+
+        // change preferred
+        setPreferredShipping({...preferredShipping, destination:selectedCountry})
+
+        if(selectedCountry=="GB" && shippingPrice != 0){
+            setShippingPrice(0)
+            intlShippingStatus = "changed";
+            
+            // modify checkout
+            const response = await fetch("https://p3p22yr8sg.execute-api.eu-west-2.amazonaws.com/default/modifyCheckout", {
+            method: "POST", // or 'PUT'
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+            });
+            
+            if (response.ok){
+                result = await response.json();
+            }
+            else{
+                console.log("modify failed")
+            }
+        }
+        else if (selectedCountry!='GB' && shippingPrice == 0){
+            setShippingPrice(5);
+            intlShippingStatus = "changed";
+
+            // send api call to modify
+            const response = await fetch("https://p3p22yr8sg.execute-api.eu-west-2.amazonaws.com/default/modifyCheckout", {
+                method: "POST", // or 'PUT'
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+                });
+                
+                if (response.ok){
+                    result = await response.json();
+                    console.log(result)
+                }
+                else{
+                    console.log("modify failed")
+                }
+    }
+
+    console.log(result)
+
+    if(intlShippingStatus =="changed"){
+        card.current.unmount()
+        card.current = SumUpCard.mount({
+        id:               "sumup-card",
+        checkoutId:       result.checkoutId,
+        onResponse:       (e) => handleOrder(e),
+        showAmount: true,
+        showSubmitButton: false
+        })
+    
+        // store modified checkout
+        localStorage.setItem("checkout", JSON.stringify({
+            checkoutId: result.checkoutId,
+            shippingPrice: result.shippingPrice,
+            checkoutPrice: result.checkoutPrice
+        }));
+        
+        // update refs and state
+        checkoutId.current = result.checkoutId
+        setShippingPrice(result.shippingPrice);
+        setCheckoutPrice(result.checkoutPrice);
+    }
+
+
+    // save the shipping dest as preferred
+    localStorage.setItem("preferred_shipping", JSON.stringify(payload.modify_shipping));
+    
+}
+
+
     // handler runs on submit button press
     const handleOrderSubmit = (data) => {
         console.log(data)
+        // TODO: change to include country
         shippingDetails.current = {
             fullName: data.fullName,
             address1: data.address1,
             address2: data.address2,
             postcode: data.postCode,
-            price: shippingPrice.current
+            price: shippingPrice
 
         }
         contactDetails.current = {
@@ -149,6 +253,8 @@ export default function Home(){
 
             <DetailsForm
             form = {[register, control, errors]}
+            handleCountryChange={handleCountryChange}
+            preferredShipping = {preferredShipping}
             /> 
 
 
@@ -161,7 +267,7 @@ export default function Home(){
             onClick={handleSubmit(handleOrderSubmit)}
             className="bg-pubbrickblue hover:bg-stone-200 border-2 border-black text-center text-lg text-white pt-2 pb-2 pr-8 pl-8 drop-shadow-sm "
             >
-                Pay £{checkoutPrice.current}
+                Pay £{checkoutPrice}
             </div>
             </div>
             

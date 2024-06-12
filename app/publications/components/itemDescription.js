@@ -50,7 +50,7 @@ export default function ItemDescription({publication, publication_key}){
                 <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col md:">
                            {!inventory.soldOut && <div>
-                                {`(${inventory.lockedInventory + 1}/${publication.stockQuantity})`}
+                                {`Ed. ${inventory.lockedInventory + 1}/${publication.stockQuantity}`}
                             </div>}
                            
                            {inventory.soldOut && <a

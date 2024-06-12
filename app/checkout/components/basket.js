@@ -2,7 +2,7 @@ import CartItem from "@/app/cart/components/cart_item"
 import ShippingItem from "./shipping_item"
 
 
-export default function Basket({cart, shippingPrice}){
+export default function  Basket({cart, shippingPrice}){
     console.log(cart)
 
 
@@ -18,7 +18,8 @@ export default function Basket({cart, shippingPrice}){
                     />
                 ))}
             <ShippingItem
-                price={shippingPrice.current}
+                // price={shippingPrice.current}
+                price={shippingPrice}
             />
             </div>
     )

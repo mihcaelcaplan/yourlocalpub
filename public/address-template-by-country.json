@@ -1,0 +1,1302 @@
+[
+    {
+        "code": "AD",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "AE",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [region], [country]"
+    },
+    {
+        "code": "AF",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "AG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "AI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[postcode] [country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [postcode] [country]"
+    },
+    {
+        "code": "AL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "AM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode]\n[settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode], [settlement], [region], [country]"
+    },
+    {
+        "code": "AO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement], [postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "AQ",
+        "format": "[contact_name]\n[house]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [settlement], [country]"
+    },
+    {
+        "code": "AR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "AS",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "AT",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "AU",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [region] [postcode], [country]"
+    },
+    {
+        "code": "AW",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "AX",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "AZ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BA",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BB",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "BD",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement]- [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement]- [postcode], [country]"
+    },
+    {
+        "code": "BE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[county]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [county], [region], [country]"
+    },
+    {
+        "code": "BG",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "BI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "BJ",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "BL",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "BN",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "BO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "BQ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement] - [region]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement] - [region], [postcode], [country]"
+    },
+    {
+        "code": "BS",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[county]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [county], [country]"
+    },
+    {
+        "code": "BT",
+        "format": "[contact_name]\n[house]\n[road] [house_number], [house]\n[settlement_part]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [house], [settlement_part], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "BV",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "BW",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "BY",
+        "format": "[country]\n[region]\n[postcode] [settlement]\n[suburb]\n[road], [house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [region], [postcode] [settlement], [suburb], [road], [house_number], [house]"
+    },
+    {
+        "code": "BZ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "CA",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "CC",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [region] [postcode], [country]"
+    },
+    {
+        "code": "CD",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "CF",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "CG",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "CH",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "CI",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "CK",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "CL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "CM",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "CN",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[county]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [county], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "CN_en",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[county]\n[postcode][settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [county], [postcode][settlement], [country]"
+    },
+    {
+        "code": "CN_zh",
+        "format": "[country]\n[postcode]\n[region]\n[county]\n[settlement]\n[settlement_part]\n[road]\n[house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [postcode], [region], [county], [settlement], [settlement_part], [road], [house_number], [house]"
+    },
+    {
+        "code": "CO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[postcode] [settlement], [region]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [postcode] [settlement], [region], [country]"
+    },
+    {
+        "code": "CR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[region], [settlement], [settlement_part]\n[postcode] [country]",
+        "buildingFormat": "[house], [road] [house_number], [region], [settlement], [settlement_part], [postcode] [country]"
+    },
+    {
+        "code": "CU",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement], [postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "CV",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "CW",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "CX",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [region] [postcode], [country]"
+    },
+    {
+        "code": "CY",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "CZ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "DE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "DJ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "DK",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "DM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "DO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement], [region]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [region], [postcode], [country]"
+    },
+    {
+        "code": "DZ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "EC",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode], [settlement], [country]"
+    },
+    {
+        "code": "EE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "EG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "EH",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "ER",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "ES",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "ET",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "FI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "FJ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "FK",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "FM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "FO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "FR",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GA",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "GB",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "GD",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "GE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "GH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "GI",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "GL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "GN",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [region], [country]"
+    },
+    {
+        "code": "GP",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GQ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "GR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GS",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "GT",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode]-[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode]-[settlement], [country]"
+    },
+    {
+        "code": "GU",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "GW",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "GY",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "HK_en",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[region_part]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [region_part], [region], [country]"
+    },
+    {
+        "code": "HK_zh",
+        "format": "[country]\n[region]\n[region_part]\n[road]\n[house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [region], [region_part], [road], [house_number], [house]"
+    },
+    {
+        "code": "HM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [region] [postcode], [country]"
+    },
+    {
+        "code": "HN",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "HR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "HT",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "HU",
+        "format": "[contact_name]\n[house]\n[settlement]\n[road] [house_number]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [settlement], [road] [house_number], [postcode], [country]"
+    },
+    {
+        "code": "ID",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement][postcode]\n[region]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement][postcode], [region], [country]"
+    },
+    {
+        "code": "IE",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement]\n[county]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [county], [country]"
+    },
+    {
+        "code": "IL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "IM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "IN",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement_part]\n[settlement]- [postcode]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement_part], [settlement]- [postcode], [region], [country]"
+    },
+    {
+        "code": "IO",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "IQ",
+        "format": "[contact_name]\n[house]\n[house_number] [settlement_part]\n[road]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [settlement_part], [road], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "IR_en",
+        "format": "[contact_name]\n[house]\n[settlement]\n[settlement_part]\n[road]\n[house_number]\n[region]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [settlement], [settlement_part], [road], [house_number], [region], [postcode], [country]"
+    },
+    {
+        "code": "IR_fa",
+        "format": "[country]\n[region]\n[region_part]\n[region]\n[settlement]\n[settlement_part]\n[road]\n[house_number]\n[house]\n[contact_name]\n[postcode]",
+        "buildingFormat": "[country], [region], [region_part], [region], [settlement], [settlement_part], [road], [house_number], [house], [postcode]"
+    },
+    {
+        "code": "IS",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "IT",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[postcode] [settlement] [county]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [postcode] [settlement] [county], [country]"
+    },
+    {
+        "code": "JE",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "JM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "JO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "JP",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "JP_en",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "JP_ja",
+        "format": "[country]\n[postcode]\n[region]\n[settlement]\n[settlement_part]\n[road]\n[house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [postcode], [region], [settlement], [settlement_part], [road], [house_number], [house]"
+    },
+    {
+        "code": "KE",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "KG",
+        "format": "[country]\n[region]\n[postcode] [settlement]\n[suburb]\n[road], [house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [region], [postcode] [settlement], [suburb], [road], [house_number], [house]"
+    },
+    {
+        "code": "KH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "KI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "KM",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[settlement_part]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [settlement_part], [country]"
+    },
+    {
+        "code": "KN",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region], [country]"
+    },
+    {
+        "code": "KP",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "KR",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part], [settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "KR_en",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part], [settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "KR_ko",
+        "format": "[country]\n[region]\n[settlement]\n[settlement_part]\n[road]\n[house_number]\n[house]\n[contact_name]\n[postcode]",
+        "buildingFormat": "[country], [region], [settlement], [settlement_part], [road], [house_number], [house], [postcode]"
+    },
+    {
+        "code": "KW",
+        "format": "[contact_name]\n[house]\n[settlement_part]\n\n[road]\n[house_number] [house]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [settlement_part], [road], [house_number] [house], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "KY",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "KZ",
+        "format": "[country]\n[region]\n[postcode] [settlement]\n[suburb]\n[road], [house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [region], [postcode] [settlement], [suburb], [road], [house_number], [house]"
+    },
+    {
+        "code": "LA",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "LB",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "LC",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "LI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "LK",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "LR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "LS",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "LT",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "LU",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "LV",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement], [postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "LY",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "MA",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "MC",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "MD",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "ME",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "MF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "MG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "MH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "MK",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "ML",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "MM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "MN",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode], [settlement], [country]"
+    },
+    {
+        "code": "MO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "MO_zh",
+        "format": "[country]\n[settlement]\n[road]\n[house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [settlement], [road], [house_number], [house]"
+    },
+    {
+        "code": "MP",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "MQ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "MR",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "MS",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "MT",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "MU",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "MV",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "MW",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "MX",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[postcode] [settlement], [region]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [postcode] [settlement], [region], [country]"
+    },
+    {
+        "code": "MY",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[postcode] [settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [postcode] [settlement], [region], [country]"
+    },
+    {
+        "code": "MZ",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "NA",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "NC",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "NE",
+        "format": "[contact_name]\n[house]\n[house_number]\n[road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "NF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [region] [postcode], [country]"
+    },
+    {
+        "code": "NG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement][postcode]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement][postcode], [region], [country]"
+    },
+    {
+        "code": "NI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "NL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "NO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "NP",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[region] [postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "NR",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "NU",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "NZ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "OM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode]\n[settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode], [settlement], [region], [country]"
+    },
+    {
+        "code": "PA",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[postcode]\n[settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [postcode], [settlement], [region], [country]"
+    },
+    {
+        "code": "PE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "PF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "PG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement][postcode] [region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement][postcode] [region], [country]"
+    },
+    {
+        "code": "PH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[postcode] [region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [postcode] [region], [country]"
+    },
+    {
+        "code": "PK",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "PL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "PM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "PN",
+        "format": "[contact_name]\n[house]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [settlement], [country]"
+    },
+    {
+        "code": "PR",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "PS",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "PT",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "PW",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "PY",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "QA",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "RE",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "RO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "RS",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "RU",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[region]\n[country]\n[postcode]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [region], [country], [postcode]"
+    },
+    {
+        "code": "RW",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "SA",
+        "format": "[contact_name]\n[house]\n[house_number] [road], [settlement_part]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "SB",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "SC",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "SD",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "SE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "SG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "SH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "SI",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "SJ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "SK",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement] [postcode], [country]"
+    },
+    {
+        "code": "SL",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "SM",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[postcode] [settlement] [county]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [postcode] [settlement] [county], [country]"
+    },
+    {
+        "code": "SN",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "SO",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "SR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "SS",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "ST",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "SV",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] - [settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] - [settlement], [region], [country]"
+    },
+    {
+        "code": "SX",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "SY",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [settlement], [country]"
+    },
+    {
+        "code": "SZ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "TC",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "TD",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement_part]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement_part], [settlement], [country]"
+    },
+    {
+        "code": "TF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "TG",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "TH",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part], [settlement]\n[region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "TJ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "TK",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "TL",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "TM",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "TN",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "TO",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "TR",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "TT",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement], [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "TV",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region], [country]"
+    },
+    {
+        "code": "TW",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "TW_en",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement][postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement][postcode], [country]"
+    },
+    {
+        "code": "TW_zh",
+        "format": "[country]\n[postcode]\n[settlement]\n[settlement_part]\n[road]\n[house_number]\n[house]\n[contact_name]",
+        "buildingFormat": "[country], [postcode], [settlement], [settlement_part], [road], [house_number], [house]"
+    },
+    {
+        "code": "TZ",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[region]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [region], [country]"
+    },
+    {
+        "code": "UA",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[settlement_part]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [settlement_part], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "UG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    },
+    {
+        "code": "UM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "US",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "UY",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "UZ",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[region]\n[country]\n[postcode]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [region], [country], [postcode]"
+    },
+    {
+        "code": "VA",
+        "format": "[contact_name]\n[house]\n[road], [house_number]\n[postcode] [settlement] [county]\n[country]",
+        "buildingFormat": "[house], [road], [house_number], [postcode] [settlement] [county], [country]"
+    },
+    {
+        "code": "VC",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "VE",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement] [postcode], [region]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement] [postcode], [region], [country]"
+    },
+    {
+        "code": "VG",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [island]\n[country], [postcode]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [island], [country], [postcode]"
+    },
+    {
+        "code": "VI",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement], [region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "VN",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement_part], [settlement]\n[region] [postcode]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement_part], [settlement], [region] [postcode], [country]"
+    },
+    {
+        "code": "VU",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "WF",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "WS",
+        "format": "[contact_name]\n[house]\n[road] [house_number]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [road] [house_number], [settlement], [country]"
+    },
+    {
+        "code": "YE",
+        "format": "[contact_name]\n[house]\n[house_number], [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number], [road], [settlement], [country]"
+    },
+    {
+        "code": "YT",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "ZA",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement_part]\n[settlement]\n[postcode]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement_part], [settlement], [postcode], [country]"
+    },
+    {
+        "code": "ZM",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[postcode] [settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [postcode] [settlement], [country]"
+    },
+    {
+        "code": "ZW",
+        "format": "[contact_name]\n[house]\n[house_number] [road]\n[settlement]\n[country]",
+        "buildingFormat": "[house], [house_number] [road], [settlement], [country]"
+    }
+]
